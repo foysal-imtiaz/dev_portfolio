@@ -1,6 +1,6 @@
-import { use, useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router";
-import { hover, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const navLinks = [
   { name: "Projects", path: "/projects" },
@@ -12,12 +12,29 @@ const navLinks = [
 const Navbar = () => {
   const [hovered, setHovered] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setScrolled(scrollTop > 50); // Change threshold as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="sticky top-0 px-6 pb-4 pt-3 bg-[#ffffff] text-xl w-full md:w-[94%] mx-auto border-b-[1px] border-gray-200 md:border-b-0 md:border-r-[1px] md:border-l-[1px] md:border-opacity-70 md:border-gray-200">
+    <div
+      className={`sticky top-0 px-6 pb-4 pt-3 text-xl w-full md:w-[94%] mx-auto border-b-[1px] border-gray-200 md:border-b-0 md:border-r-[1px] md:border-l-[1px] md:border-opacity-70 md:border-gray-200 transition-all duration-300 z-50 ${
+        scrolled
+          ? "bg-white/80 backdrop-blur-sm shadow-sm px-[8px] pb-1 pt-1 md:w-[82%] mx-auto top-3 rounded-full"
+          : "bg-[#ffffff] px-6 pb-4 pt-3 w-full md:w-[94%] mx-auto"
+      }`}
+    >
       <div className="flex justify-between items-center">
         <div>
           <Link to="/">
