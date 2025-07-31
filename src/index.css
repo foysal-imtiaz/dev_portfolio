@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+.bg-angled-lines {
+  background-image: repeating-linear-gradient(
+    -45deg,                   /* very steep angle */
+    rgba(0, 0, 0, 0.06),      /* line color with slight opacity */
+    rgba(0, 0, 0, 0.06) 1px,  /* 1px thick line */
+    transparent 1px,
+    transparent 8px           /* small gap = denser lines */
+  );
+  background-size: cover;
+  background-repeat: repeat;
+}
