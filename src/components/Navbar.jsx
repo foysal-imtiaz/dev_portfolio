@@ -39,9 +39,9 @@ const Navbar = () => {
 
   return (
     <div
-      className={`sticky top-0 px-6 pb-4 pt-3 text-xl w-full md:w-[94%] mx-auto border-b-[1px] border-gray-200 md:border-b-0 md:border-r-[1px] md:border-l-[1px] md:border-opacity-70 md:border-gray-200 transition-all duration-300 z-50 ${
+      className={`sticky top-0 px-6 pb-4 pt-3 text-xl w-full mx-auto border-b-[1px] border-gray-200 md:border-b-0 md:border-r-[1px] md:border-l-[1px] md:border-opacity-70 md:border-gray-200 transition-all duration-300 z-50 ${
         scrolled
-          ? "bg-[#ffffff] md:bg-white/80 md:backdrop-blur-sm md:shadow-sm md:px-[5px] md:pb-[3px] md:pt-[4px] md:w-[77%] mx-auto md:top-3 md:rounded-full"
+          ? "bg-white/80 backdrop-blur-sm md:bg-white/80 md:backdrop-blur-sm md:shadow-sm md:px-[5px] md:pb-[3px] md:pt-[4px] md:w-4/5 mx-auto md:top-3 md:rounded-full"
           : "bg-[#ffffff] px-6 pb-4 pt-3 w-full md:w-[94%] mx-auto"
       }`}
     >
@@ -88,13 +88,18 @@ const Navbar = () => {
           ))}
         </div>
         {/* MOBILE VIEW */}
-        <div className="md:hidden" onClick={toggleMenu}>
+        <motion.div
+          transition={transition}
+          variants={variants}
+          className="md:hidden"
+          onClick={toggleMenu}
+        >
           <img
             src="./src/assets/menu-icon.png"
             alt="Menu"
             className="h-5 w-5"
           />
-        </div>
+        </motion.div>
         {/* Conditional Rendering of MENU */}
 
         {menuOpen && (
