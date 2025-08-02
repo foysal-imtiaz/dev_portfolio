@@ -6,14 +6,14 @@ import { LuMenu } from "react-icons/lu";
 
 // NAVBAR LINKS
 const navLinks = [
+  { name: "Home", path: "/" },
   { name: "Projects", path: "/projects" },
   { name: "Posts", path: "/posts" },
   { name: "Resources", path: "/resources" },
-  { name: "Contact", path: "/contact" },
 ];
 
 // MOTION Animation Values
-const transition = { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] };
+const transition = { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] };
 const variants = {
   hidden: { filter: "blur(10px)", transform: "translateY(20%)", opacity: 0 },
   visible: { filter: "blur(0)", transform: "translateY(0)", opacity: 1 },
