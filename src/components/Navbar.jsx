@@ -69,7 +69,7 @@ const Navbar = () => {
         <motion.div transition={transition} variants={variants}>
           <Link to="/">
             <img
-              src="./src/assets/image2color.jpg"
+              src="/assets/image2color.jpg"
               alt="profile picture"
               className={`rounded-full transition-all duration-300,
                 ${scrolled ? "h-8 w-8" : "h-10 w-10"}`}
