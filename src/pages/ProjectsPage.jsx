@@ -1,6 +1,6 @@
 const ProjectsPage = () => {
   return (
-    <div>
+    <div className="dark:text-white">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eius
       saepe voluptatem itaque maiores molestias quam, animi tenetur eum ab at ad
       error, cumque, nam ducimus tempora. Eligendi molestiae maxime est itaque

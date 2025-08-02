@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { motion } from "framer-motion";
+import ThemeToggle from "./ThemeToggle";
+import { LuMenu } from "react-icons/lu";
 
 // NAVBAR LINKS
 const navLinks = [
@@ -22,15 +24,26 @@ const Navbar = () => {
   const [hovered, setHovered] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
 
   // Function to Handle Scroll
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setScrolled(scrollTop > 50); // Change threshold as needed
+
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setScrolled(scrollTop > 50);
+          ticking = false;
+        });
+
+        ticking = true;
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -39,11 +52,13 @@ const Navbar = () => {
 
   return (
     <div
-      className={`sticky top-0 px-6 pb-4 pt-3 text-xl w-full mx-auto border-b-[1px] border-gray-200 border-opacity-70 md:border-b-0 md:border-r-[1px] md:border-l-[1px] md:border-opacity-70 md:border-gray-200 transition-all duration-300 z-50 ${
-        scrolled
-          ? "bg-white/80 backdrop-blur-sm md:bg-white/80 md:backdrop-blur-sm md:shadow-sm md:px-[5px] md:pb-[3px] md:pt-[4px] md:w-4/5 mx-auto md:top-3 md:rounded-full"
-          : "bg-[#ffffff] px-6 pb-4 pt-3 w-full md:w-[94%] mx-auto"
-      }`}
+      className={`sticky top-0 w-full z-50 px-6 pb-4 pt-3 text-xl mx-auto border-b border-gray-200 dark:border-[#222222] border-opacity-70 
+    md:border-b-0 md:border-x md:border-opacity-70
+    ${
+      scrolled
+        ? "md:w-[94%] dark:bg-[#171717]/80 backdrop-blur-sm bg-white/80 md:shadow-sm "
+        : "bg-white dark:bg-[#171717] md:w-[94%]"
+    }`}
     >
       <motion.div
         initial="hidden"
@@ -56,25 +71,26 @@ const Navbar = () => {
             <img
               src="./src/assets/image2color.jpg"
               alt="profile picture"
-              className={`h-10 w-10 rounded-full
-                ${scrolled ? "md:h-8 md:w-8" : "h-10 w-10 rounded-full"}`}
+              className={`rounded-full transition-all duration-300,
+                ${scrolled ? "h-8 w-8" : "h-10 w-10"}`}
             />
           </Link>
         </motion.div>
         {/* DESKTOP VIEW */}
         <div className="hidden md:flex  justify-center items-center text-sm text-neutral-800">
+          <ThemeToggle />
           {navLinks.map((link, index) => (
             <Link
               key={index}
               to={link.path}
-              className="relative px-2 py-1 text-sm"
+              className="dark:text-white relative px-2 py-1 text-sm"
               onMouseEnter={() => setHovered(index)}
               onMouseLeave={() => setHovered(null)}
             >
               {hovered === index && (
                 <motion.span
                   layoutId="hovered-span"
-                  className="h-full w-full absolute inset-0 rounded-md bg-neutral-100"
+                  className="dark:bg-neutral-800 h-full w-full absolute inset-0 rounded-md bg-neutral-100"
                 />
               )}
               <motion.span
@@ -91,14 +107,17 @@ const Navbar = () => {
         <motion.div
           transition={transition}
           variants={variants}
-          className="md:hidden"
-          onClick={toggleMenu}
+          className=" md:hidden flex gap-2 justify-center items-center"
         >
-          <img
-            src="./src/assets/menu-icon.png"
-            alt="Menu"
-            className="h-5 w-5"
-          />
+          <div className="">
+            <ThemeToggle />
+          </div>
+          <div
+            className="md:hidden flex justify-center items-center gap-2"
+            onClick={toggleMenu}
+          >
+            <LuMenu className="dark:text-neutral-300 h-6 w-6" />
+          </div>
         </motion.div>
         {/* Conditional Rendering of MENU */}
 

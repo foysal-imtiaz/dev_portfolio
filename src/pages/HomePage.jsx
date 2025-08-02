@@ -8,7 +8,7 @@ const variants = {
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="">
       {/* INTRO SECTION */}
       <motion.div
         initial="hidden"
@@ -20,21 +20,21 @@ const HomePage = () => {
           <motion.span
             transition={transition}
             variants={variants}
-            className="md:hidden text-neutral-500 border-[1px] border-gray-300 opacity-70 py-[2px] px-2 shadow-sm rounded-md text-sm"
+            className="dark:border-gray-600  md:hidden text-neutral-500 border-[1px] border-gray-300 opacity-70 py-[2px] px-2 shadow-sm rounded-md text-sm"
           >
             Full Stack Dev
           </motion.span>
           <motion.h1
             transition={transition}
             variants={variants}
-            className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-extrabold text-neutral-700"
+            className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-extrabold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-white/90"
           >
             Foysal Imtiaz
           </motion.h1>
           <motion.span
             transition={transition}
             variants={variants}
-            className="hidden text-neutral-500 md:flex md:border-[1px] md:h-fit md:border-gray-300 md:opacity-70 md:shadow-sm md:py-[2px] md:px-2 md:rounded-md md:text-sm"
+            className="hidden text-neutral-500 md:flex md:border-[1px] md:h-fit md:border-gray-300 dark:border-gray-600 md:opacity-70 md:shadow-sm md:py-[2px] md:px-2 md:rounded-md md:text-sm"
           >
             Full Stack Dev
           </motion.span>
@@ -51,11 +51,13 @@ const HomePage = () => {
           always eager to learn something new!
         </motion.p>
       </motion.div>
-      <span className="my-10 w-full h-[1px] block bg-gray-200 opacity-50"></span>
+      <span className="dark:bg-[#2a2a2a] dark:shadow-lg my-10 w-full h-[1px] block bg-gray-200 opacity-50"></span>
 
       {/* PROJECT SECTION */}
       <div>
-        <h1 className="text-gray-800">Things I have built so far</h1>
+        <h1 className="text-gray-800 dark:text-white/90">
+          Things I have built so far
+        </h1>
         <div></div>
       </div>
     </div>
