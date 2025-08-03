@@ -31,6 +31,11 @@ const Navbar = () => {
     setMenuOpen((prev) => !prev);
   };
 
+  // New page on top
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   // Function to Handle Scroll
   useEffect(() => {
     let ticking = false;
@@ -69,7 +74,7 @@ const Navbar = () => {
         className="flex justify-between items-center"
       >
         <motion.div transition={transition} variants={variants}>
-          <Link to="/">
+          <Link to="/" onClick={handleLinkClick}>
             <img
               src="/assets/image2color.jpg"
               alt="profile picture"
@@ -83,6 +88,7 @@ const Navbar = () => {
           <ThemeToggle />
           {navLinks.map((link, index) => (
             <Link
+              onClick={handleLinkClick}
               key={index}
               to={link.path}
               className="dark:text-white relative px-2 py-1 text-sm"
@@ -150,7 +156,7 @@ const Navbar = () => {
             <motion.div
               transition={transition}
               variants={variants}
-              className="flex gap-3 pt-1 items-center justify-center"
+              className="flex gap-4 pt-1 items-center justify-center"
             >
               <a href="https://github.com/foysal-imtiaz/" target="_blank">
                 <FaGithub className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300" />

@@ -14,16 +14,24 @@ const ProjectsPage = () => {
         whileInView="visible"
         transition={{ staggerChildren: 0.04 }}
       >
-        <motion.div transition={transition} variants={variants}>
-          <h1 className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-bold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-neutral-400">
+        <div>
+          <motion.h1
+            transition={transition}
+            variants={variants}
+            className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-bold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-neutral-300"
+          >
             Projects
-          </h1>
-          <p className="text-neutral-500 mt-4 md:w-[65%] ">
+          </motion.h1>
+          <motion.p
+            transition={transition}
+            variants={variants}
+            className="text-neutral-500 mt-4 md:w-[65%] dark:text-neutral-400 dark:text-opacity-80"
+          >
             Building projects is a great way to learn. Be it a small, pet
             project, the learning and impact is high. I have been building
             projects to solidify my learning. Here are all my projects!
-          </p>
-        </motion.div>
+          </motion.p>
+        </div>
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
@@ -44,7 +52,7 @@ const ProjectsPage = () => {
       {/* CONTACT SECTION */}
       <div>
         <div>
-          <h1 className="text-neutral-800 font-normal dark:text-neutral-400 mb-4">
+          <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-4">
             Get in touch
           </h1>
         </div>

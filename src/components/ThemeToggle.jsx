@@ -37,7 +37,7 @@ const ThemeToggle = () => {
         transition={transition}
         variants={variants}
         onClick={toggleTheme}
-        className="px-2 py-2 rounded-md md:hover:bg-neutral-100 text-neutral-600 dark:text-slate-300 md:dark:hover:bg-neutral-800"
+        className="px-2 py-2 rounded-md md:hover:bg-neutral-100 text-neutral-600 dark:text-neutral-300 dark:text-opacity-90 md:dark:hover:bg-neutral-800"
       >
         {theme === "dark" ? <FaSun /> : <FaRegMoon className="h-4 w-4" />}
       </motion.button>

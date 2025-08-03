@@ -15,10 +15,10 @@ const ResoucePage = () => {
         transition={{ staggerChildren: 0.04 }}
       >
         <motion.div transition={transition} variants={variants}>
-          <h1 className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-bold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-neutral-400">
+          <h1 className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-bold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-neutral-300">
             Resources
           </h1>
-          <p className="text-neutral-500 mt-4 md:w-[65%]">
+          <p className="text-neutral-500 mt-4 md:w-[65%] dark:text-neutral-400 dark:text-opacity-80">
             Here I share cool and helpful resouces and random stuff that i found
             online. Links are provided with them. Check them out below!
           </p>
@@ -41,7 +41,7 @@ const ResoucePage = () => {
       {/* CONTACT SECTION */}
       <div>
         <div>
-          <h1 className="text-neutral-800 font-normal dark:text-neutral-400 mb-4">
+          <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-4">
             Get in touch
           </h1>
         </div>

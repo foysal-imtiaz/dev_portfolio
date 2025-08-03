@@ -14,17 +14,25 @@ const BlogPostPage = () => {
         whileInView="visible"
         transition={{ staggerChildren: 0.04 }}
       >
-        <motion.div transition={transition} variants={variants}>
-          <h1 className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-bold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-neutral-400">
+        <div>
+          <motion.h1
+            transition={transition}
+            variants={variants}
+            className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-bold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-neutral-300"
+          >
             Blog Posts
-          </h1>
-          <p className="text-neutral-500 mt-4 md:w-[65%]">
+          </motion.h1>
+          <motion.p
+            transition={transition}
+            variants={variants}
+            className="text-neutral-500 mt-4 md:w-[65%] dark:text-neutral-400 dark:text-opacity-80"
+          >
             Sharing what I've learned with the community is a great way to help
             others and myself as well. Writing strengthens my understanding and
             it helps others to understand as well. Here are the blog posts that
             I've written so far!
-          </p>
-        </motion.div>
+          </motion.p>
+        </div>
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
       <div className="flex flex-col gap-7">
@@ -45,7 +53,7 @@ const BlogPostPage = () => {
       {/* CONTACT SECTION */}
       <div>
         <div>
-          <h1 className="text-neutral-800 font-normal dark:text-neutral-400 mb-4">
+          <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-4">
             Get in touch
           </h1>
         </div>

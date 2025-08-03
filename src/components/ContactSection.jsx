@@ -7,19 +7,19 @@ const ContactSection = () => {
       initial="hidden"
       whileInView="visible"
       transition={{ staggerChildren: 0.04 }}
-      className="px-3"
+      className=""
     >
       <motion.p
         transition={transition}
         variants={variants}
-        className="text-neutral-500 w-full md:w-1/2"
+        className="text-neutral-500 w-full md:w-1/2 dark:text-neutral-400 dark:text-opacity-80"
       >
         I'm open new opportunities. Whether you have a question or want to say
         hi, drop a message in{" "}
         <a
           href="https://www.linkedin.com/in/foysalimtiaz"
           target="_blank"
-          className="font-semibold text-sm text-neutral-600 hover:text-blue-500 dark:text-neutral-300 opacity-80 dark:hover:text-blue-500"
+          className="font-semibold text-sm text-neutral-600  hover:text-blue-500 dark:text-neutral-300 opacity-80 dark:hover:text-blue-500"
         >
           LinkedIn
         </a>{" "}

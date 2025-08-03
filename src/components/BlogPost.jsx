@@ -14,12 +14,12 @@ const BlogPost = ({ title, description, image, readMoreLink, date }) => {
         variants={variants}
         className="w-full xl:w-2/3 "
       >
-        <h1 className="text-md font-bold tracking-tight pb-2 dark:text-neutral-400 text-neutral-800">
+        <h1 className="text-md font-bold tracking-tight pb-2 dark:text-neutral-300 text-neutral-800">
           <a href={readMoreLink} target="_blank" className="cursor-pointer">
             {title}
           </a>
         </h1>
-        <p className="text-[15px] text-neutral-500 pb-4">
+        <p className="text-[15px] text-neutral-500 dark:text-neutral-400 dark:text-opacity-80 pb-4">
           {description}
           <span className="text-neutral-700 dark:text-neutral-400 dark:hover:text-blue-500 cursor-pointer font-medium text-[15px] hover:text-blue-500">
             {" "}
@@ -28,7 +28,9 @@ const BlogPost = ({ title, description, image, readMoreLink, date }) => {
             </a>
           </span>
         </p>
-        <span className="text-[13px] text-neutral-600">Posted on: {date}</span>
+        <span className="text-[13px] text-neutral-600 dark:text-neutral-400 dark:text-opacity-80">
+          Posted on: {date}
+        </span>
       </motion.div>
       <motion.div
         transition={transition}

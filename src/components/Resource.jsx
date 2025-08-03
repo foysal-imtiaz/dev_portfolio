@@ -10,12 +10,12 @@ const Resource = ({ title, link, site_name }) => {
       transition={{ staggerChildren: 0.04 }}
       className="flex gap-3"
     >
-      <motion.div
-        transition={transition}
-        variants={variants}
-        className="flex items-center "
-      >
-        <p className="inline text-neutral-500">
+      <div className="flex items-center ">
+        <motion.p
+          transition={transition}
+          variants={variants}
+          className="inline text-neutral-500 dark:text-neutral-400 dark:text-opacity-80"
+        >
           <span className=" text-blue-600 dark:text-blue-800">➤</span> {title}{" "}
           <a
             href={link}
@@ -25,8 +25,8 @@ const Resource = ({ title, link, site_name }) => {
             {site_name}
             <MdOutlineArrowOutward className="inline pl-1" />{" "}
           </a>
-        </p>
-      </motion.div>
+        </motion.p>
+      </div>
     </motion.div>
   );
 };
