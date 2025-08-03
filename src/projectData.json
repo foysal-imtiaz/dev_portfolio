@@ -1,7 +1,7 @@
 [
   {
     "title": "AI Portfolio",
-    "description": "A personal portfolio built with React and Tailwind.",
+    "description": "A personal portfolio built with React and Tailwind. A fullstack blog built with MERN stack.A fullstack blog built with MERN stack.",
     "image":
       "https://images.prismic.io/loco-blogs/1394c5c3-9097-40c2-9099-5dca39cf3719_image.png?auto=compress%2Cformat&rect=0%2C0%2C3840%2C2160&w=3840&fit=max",
     "github_link": "https://github.com/yourusername/ai-portfolio",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Weather App",
-    "description": "A weather app using OpenWeatherMap API.",
+    "description": "A weather app using OpenWeatherMap API. A fullstack blog built with MERN . A fullstack blog built with MERN stack. ",
     "image":
       "https://elements-resized.envatousercontent.com/elements-cover-images/bedca7ea-76f7-424f-bb28-05894ef238fb?w=433&cf_fit=scale-down&q=85&format=auto&s=775e14158197d5246f0418499eb668f42bbbb9ec5258666792817a9b711f8ebb",
     "github_link": "https://github.com/yourusername/ai-portfolio",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Blog Platform",
-    "description": "A fullstack blog built with MERN stack.",
+    "description": "A fullstack blog built with MERN stack. A fullstack blog built with MERN stack.A fullstack blog built with MERN stack. ",
     "image":
       "https://cdn.prod.website-files.com/6243c3bb3b5a1852803d0c7f/6722ae41694d5b50ae789c6b_64ac94a13afab265d4307028_reflect.jpeg",
     "github_link": "https://github.com/yourusername/ai-portfolio",

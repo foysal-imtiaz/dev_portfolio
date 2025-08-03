@@ -6,12 +6,7 @@ import Experience from "../components/Experience";
 import ContactSection from "../components/ContactSection";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
-
-const transition = { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] };
-const variants = {
-  hidden: { filter: "blur(10px)", transform: "translateY(20%)", opacity: 0 },
-  visible: { filter: "blur(0)", transform: "translateY(0)", opacity: 1 },
-};
+import { transition, variants } from "../utils/motionAnimation";
 
 const HomePage = () => {
   return (
@@ -34,7 +29,7 @@ const HomePage = () => {
           <motion.h1
             transition={transition}
             variants={variants}
-            className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-extrabold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-white/90"
+            className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-extrabold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-neutral-400"
           >
             Foysal Imtiaz
           </motion.h1>
@@ -58,10 +53,20 @@ const HomePage = () => {
           always eager to learn something new!
         </motion.p>
       </motion.div>
-      <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-10 w-full h-[1px] block bg-gray-300 opacity-50"></span>
+      <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
+      {/* WORK EXPERIENCE */}
+      <div>
+        <div>
+          <h1 className="text-neutral-800 dark:text-neutral-400 font-normal  mb-5 ">
+            Work experience so far
+          </h1>
+        </div>
+        <Experience />
+      </div>
+      <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
       {/* PROJECT SECTION */}
       <div>
-        <h1 className="text-gray-800 font-medium dark:text-white/90 mb-2">
+        <h1 className="text-neutral-800 font-normal dark:text-neutral-400 mb-5">
           Things I have built so far
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
@@ -77,11 +82,12 @@ const HomePage = () => {
           ))}
         </div>
       </div>
-      <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-10 w-full h-[1px] block bg-gray-300 opacity-50"></span>
+      <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
+
       {/* BLOG SECTION */}
       <div>
         <div>
-          <h1 className="text-gray-800 font-medium dark:text-white/90 mb-5 ">
+          <h1 className="text-neutral-800 font-normal dark:text-neutral-400 mb-5">
             Learning and sharing along the journey
           </h1>
         </div>
@@ -90,21 +96,12 @@ const HomePage = () => {
           <BlogPost />
         </div>
       </div>
-      <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-10 w-full h-[1px] block bg-gray-300 opacity-50"></span>
-      {/* WORK EXPERIENCE */}
-      <div>
-        <div>
-          <h1 className="text-gray-800 font-medium dark:text-white/90 mb-5 ">
-            Work experience so far
-          </h1>
-        </div>
-        <Experience />
-      </div>
-      <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-10 w-full h-[1px] block bg-gray-300 opacity-50"></span>
+      <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
+
       {/* CONTACT SECTION */}
       <div>
         <div>
-          <h1 className="text-gray-800 font-medium dark:text-white/90 mb-5">
+          <h1 className="text-neutral-800 font-normal dark:text-neutral-400 mb-4">
             Get in touch
           </h1>
         </div>
@@ -112,14 +109,14 @@ const HomePage = () => {
       </div>
       {/* FOOTER */}
       <div className="mt-20 pl-2 pb-7 flex justify-between">
-        <p className="text-[12px] text-neutral-500">
-          Inspired from{" "}
+        <p className="text-[11px] text-neutral-500">
+          Template Inspired from{" "}
           <a
-            className="text-blue-300"
+            className="text-blue-300 dark:text-opacity-60"
             href="https://minimal-portfolio-website-template.vercel.app/"
             target="_blank"
           >
-            Aceternity
+            Here
           </a>
         </p>
         <div className="flex gap-2 pr-2">
