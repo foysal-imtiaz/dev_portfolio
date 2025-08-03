@@ -1,12 +1,12 @@
-import Project from "../components/Project";
-import projectsData from "../projectData.json";
+import Resource from "../components/Resource";
+import resourceData from "../resouceData.json";
 import ContactSection from "../components/ContactSection";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { transition, variants } from "../utils/motionAnimation";
 
-const ProjectsPage = () => {
+const ResoucePage = () => {
   return (
     <div>
       <motion.div
@@ -16,25 +16,22 @@ const ProjectsPage = () => {
       >
         <motion.div transition={transition} variants={variants}>
           <h1 className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-bold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-neutral-400">
-            Projects
+            Resources
           </h1>
-          <p className="text-neutral-500 mt-4 md:w-[65%] ">
-            Building projects is a great way to learn. Be it a small, pet
-            project, the learning and impact is high. I have been building
-            projects to solidify my learning. Here are all my projects!
+          <p className="text-neutral-500 mt-4 md:w-[65%]">
+            Here I share cool and helpful resouces and random stuff that i found
+            online. Links are provided with them. Check them out below!
           </p>
         </motion.div>
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
-        {projectsData.map((project, index) => (
-          <Project
+      <div className="flex flex-col gap-3">
+        {resourceData.map((post, index) => (
+          <Resource
             key={index}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            github_link={project.github_link}
-            live_link={project.live_link}
+            title={post.title}
+            link={post.link}
+            site_name={post.site_name}
           />
         ))}
       </div>
@@ -75,4 +72,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default ResoucePage;

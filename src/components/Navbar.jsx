@@ -3,6 +3,8 @@ import { Link } from "react-router";
 import { motion } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
 import { LuMenu } from "react-icons/lu";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 
 // NAVBAR LINKS
 const navLinks = [
@@ -122,18 +124,45 @@ const Navbar = () => {
         {/* Conditional Rendering of MENU */}
 
         {menuOpen && (
-          <div className="absolute top-16 right-16 bg-[#f5f5f5] flex flex-col rounded-lg gap-2 p-4 text-center text-sm text-neutral-800">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            transition={{ ...transition, staggerChildren: 0.06 }}
+            className="absolute top-14 right-4 bg-white dark:bg-[#171717] shadow-lg border-2 border-gray-200 dark:border-[#222222] border-t-0 flex flex-col rounded-lg gap-2 p-4 text-center text-sm text-neutral-500 dark:text-neutral-400 font-semibold min-w-[150px]"
+          >
             {navLinks.map((link, index) => (
-              <Link
+              <motion.div
                 key={index}
-                to={link.path}
-                onClick={() => setMenuOpen(false)}
-                className="transition"
+                transition={transition}
+                variants={variants}
               >
-                {link.name}
-              </Link>
+                <Link
+                  to={link.path}
+                  onClick={() => setMenuOpen(false)}
+                  className="block py-2 px-3 rounded-md transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-700  dark:hover:text-white"
+                >
+                  {link.name}
+                </Link>
+              </motion.div>
             ))}
-          </div>
+            <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 w-full h-[1px] block bg-gray-300 opacity-50"></span>
+            <motion.div
+              transition={transition}
+              variants={variants}
+              className="flex gap-3 pt-1 items-center justify-center"
+            >
+              <a href="https://github.com/foysal-imtiaz/" target="_blank">
+                <FaGithub className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/foysalimtiaz"
+                target="_blank"
+              >
+                <FaLinkedinIn className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300" />
+              </a>
+            </motion.div>
+          </motion.div>
         )}
       </motion.div>
     </div>

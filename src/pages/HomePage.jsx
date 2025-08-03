@@ -77,7 +77,7 @@ const HomePage = () => {
               title={project.title}
               description={project.description}
               image={project.image}
-              github_link={project.github_linklink}
+              github_link={project.github_link}
               live_link={project.live_link}
             />
           ))}
@@ -121,7 +121,7 @@ const HomePage = () => {
         <p className="text-[11px] text-neutral-500">
           Template Inspired from{" "}
           <a
-            className="text-blue-300 dark:text-opacity-60"
+            className="text-blue-500 dark:text-opacity-60"
             href="https://minimal-portfolio-website-template.vercel.app/"
             target="_blank"
           >

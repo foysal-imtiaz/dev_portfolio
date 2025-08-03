@@ -1,12 +1,12 @@
-import Project from "../components/Project";
-import projectsData from "../projectData.json";
+import BlogPost from "../components/BlogPost";
+import blogPostData from "../blogPostData.json";
 import ContactSection from "../components/ContactSection";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { transition, variants } from "../utils/motionAnimation";
 
-const ProjectsPage = () => {
+const BlogPostPage = () => {
   return (
     <div>
       <motion.div
@@ -16,25 +16,26 @@ const ProjectsPage = () => {
       >
         <motion.div transition={transition} variants={variants}>
           <h1 className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-bold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-neutral-400">
-            Projects
+            Blog Posts
           </h1>
-          <p className="text-neutral-500 mt-4 md:w-[65%] ">
-            Building projects is a great way to learn. Be it a small, pet
-            project, the learning and impact is high. I have been building
-            projects to solidify my learning. Here are all my projects!
+          <p className="text-neutral-500 mt-4 md:w-[65%]">
+            Sharing what I've learned with the community is a great way to help
+            others and myself as well. Writing strengthens my understanding and
+            it helps others to understand as well. Here are the blog posts that
+            I've written so far!
           </p>
         </motion.div>
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
-        {projectsData.map((project, index) => (
-          <Project
+      <div className="flex flex-col gap-7">
+        {blogPostData.map((post, index) => (
+          <BlogPost
             key={index}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            github_link={project.github_link}
-            live_link={project.live_link}
+            title={post.title}
+            description={post.description}
+            image={post.image}
+            readMoreLink={post.readMoreLink}
+            date={post.date}
           />
         ))}
       </div>
@@ -75,4 +76,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default BlogPostPage;
