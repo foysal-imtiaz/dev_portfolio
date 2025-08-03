@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Project from "../components/Project";
 import projectsData from "../projectData.json";
 import BlogPost from "../components/BlogPost";
+import blogPostData from "../blogPostData.json";
 import Experience from "../components/Experience";
 import ContactSection from "../components/ContactSection";
 import { FaGithub } from "react-icons/fa6";
@@ -70,7 +71,7 @@ const HomePage = () => {
           Things I have built so far
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
-          {projectsData.map((project, index) => (
+          {projectsData.slice(0, 3).map((project, index) => (
             <Project
               key={index}
               title={project.title}
@@ -92,8 +93,16 @@ const HomePage = () => {
           </h1>
         </div>
         <div className="flex flex-col gap-7">
-          <BlogPost />
-          <BlogPost />
+          {blogPostData.slice(0, 2).map((post, index) => (
+            <BlogPost
+              key={index}
+              title={post.title}
+              description={post.description}
+              image={post.image}
+              readMoreLink={post.readMoreLink}
+              date={post.date}
+            />
+          ))}
         </div>
       </div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
@@ -121,10 +130,10 @@ const HomePage = () => {
         </p>
         <div className="flex gap-2 pr-2">
           <a href="https://github.com/foysal-imtiaz/" target="_blank">
-            <FaGithub className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800" />
+            <FaGithub className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-300" />
           </a>
           <a href="https://www.linkedin.com/in/foysalimtiaz" target="_blank">
-            <FaLinkedinIn className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800" />
+            <FaLinkedinIn className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-300" />
           </a>
         </div>
       </div>

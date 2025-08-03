@@ -19,12 +19,12 @@ const ContactSection = () => {
         <a
           href="https://www.linkedin.com/in/foysalimtiaz"
           target="_blank"
-          className="font-semibold text-sm text-neutral-600 hover:text-blue-500 dark:text-neutral-400 opacity-80"
+          className="font-semibold text-sm text-neutral-600 hover:text-blue-500 dark:text-neutral-300 opacity-80 dark:hover:text-blue-500"
         >
           LinkedIn
         </a>{" "}
         or reach me at{" "}
-        <span className="font-semibold text-sm text-neutral-600 dark:text-neutral-400 opacity-80">
+        <span className="font-semibold text-sm text-neutral-600 dark:text-neutral-300 opacity-80 dark:hover:text-neutral-200">
           foysalimtiaz96@gmail.com
         </span>
       </motion.p>
