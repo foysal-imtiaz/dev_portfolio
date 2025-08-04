@@ -13,6 +13,7 @@ const ResoucePage = () => {
         initial="hidden"
         whileInView="visible"
         transition={{ staggerChildren: 0.04 }}
+        className="px-4"
       >
         <motion.div transition={transition} variants={variants}>
           <h1 className="mt-2 md:mt-0 text-shadow-sm text-4xl flex font-bold bg-gradient-to-b from-neutral-800 to-neutral-700 text-transparent bg-clip-text dark:text-neutral-300">
@@ -25,7 +26,7 @@ const ResoucePage = () => {
         </motion.div>
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
-      <div className="flex flex-col gap-3">
+      <div className="px-4 flex flex-col gap-3">
         {resourceData.map((post, index) => (
           <Resource
             key={index}
@@ -39,7 +40,7 @@ const ResoucePage = () => {
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
 
       {/* CONTACT SECTION */}
-      <div>
+      <div className="px-4">
         <div>
           <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-4">
             Get in touch
@@ -48,7 +49,7 @@ const ResoucePage = () => {
         <ContactSection />
       </div>
       {/* FOOTER */}
-      <div className="mt-20 pl-2 pb-7 flex justify-between">
+      <div className="mt-20 px-4 pb-7 flex justify-between">
         <p className="text-[11px] text-neutral-500">
           Template Inspired from{" "}
           <a

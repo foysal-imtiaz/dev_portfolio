@@ -14,7 +14,7 @@ const BlogPostPage = () => {
         whileInView="visible"
         transition={{ staggerChildren: 0.04 }}
       >
-        <div>
+        <div className="px-4">
           <motion.h1
             transition={transition}
             variants={variants}
@@ -35,7 +35,7 @@ const BlogPostPage = () => {
         </div>
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
-      <div className="flex flex-col gap-7">
+      <div className="flex flex-col gap-7 px-4">
         {blogPostData.map((post, index) => (
           <BlogPost
             key={index}
@@ -51,7 +51,7 @@ const BlogPostPage = () => {
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
 
       {/* CONTACT SECTION */}
-      <div>
+      <div className="px-4">
         <div>
           <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-4">
             Get in touch
@@ -60,7 +60,7 @@ const BlogPostPage = () => {
         <ContactSection />
       </div>
       {/* FOOTER */}
-      <div className="mt-20 pl-2 pb-7 flex justify-between">
+      <div className="mt-20 px-4 pb-7 flex justify-between">
         <p className="text-[11px] text-neutral-500">
           Template Inspired from{" "}
           <a

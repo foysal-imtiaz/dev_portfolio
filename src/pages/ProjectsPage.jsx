@@ -14,7 +14,7 @@ const ProjectsPage = () => {
         whileInView="visible"
         transition={{ staggerChildren: 0.04 }}
       >
-        <div>
+        <div className="px-4">
           <motion.h1
             transition={transition}
             variants={variants}
@@ -34,7 +34,7 @@ const ProjectsPage = () => {
         </div>
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
+      <div className="px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
         {projectsData.map((project, index) => (
           <Project
             key={index}
@@ -50,7 +50,7 @@ const ProjectsPage = () => {
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
 
       {/* CONTACT SECTION */}
-      <div>
+      <div className="px-4">
         <div>
           <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-4">
             Get in touch
@@ -59,7 +59,7 @@ const ProjectsPage = () => {
         <ContactSection />
       </div>
       {/* FOOTER */}
-      <div className="mt-20 pl-2 pb-7 flex justify-between">
+      <div className="mt-20 px-4 pb-7 flex justify-between">
         <p className="text-[11px] text-neutral-500">
           Template Inspired from{" "}
           <a

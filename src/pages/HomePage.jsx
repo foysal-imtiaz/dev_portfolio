@@ -9,6 +9,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { transition, variants } from "../utils/motionAnimation";
 import { Link } from "react-router";
+import { ContainerTextFlip } from "../components/ui/CotainerFlip";
 
 const HomePage = () => {
   const handleLinkClick = () => {
@@ -22,15 +23,15 @@ const HomePage = () => {
         initial="hidden"
         whileInView="visible"
         transition={{ staggerChildren: 0.04 }}
-        className=""
+        className="px-4"
       >
         <div className="md:flex md:justify-start items-center gap-4">
           <motion.span
             transition={transition}
             variants={variants}
-            className="dark:border-gray-600  md:hidden text-neutral-500 border-[1px] border-gray-300 opacity-70 py-[2px] px-2 shadow-sm rounded-md text-sm"
+            className="flex md:hidden"
           >
-            Full Stack Dev
+            <ContainerTextFlip />
           </motion.span>
           <motion.h1
             transition={transition}
@@ -42,9 +43,9 @@ const HomePage = () => {
           <motion.span
             transition={transition}
             variants={variants}
-            className="hidden text-neutral-500 md:flex md:border-[1px] md:h-fit md:border-gray-300 dark:border-gray-600 md:opacity-70 md:shadow-sm md:py-[2px] md:px-2 md:rounded-md md:text-sm"
+            className="hidden md:flex "
           >
-            Full Stack Dev
+            <ContainerTextFlip />
           </motion.span>
         </div>
         <motion.p
@@ -54,8 +55,8 @@ const HomePage = () => {
         >
           Hi, I am a Full Stack developer proficient in MERN stack, NextJS and
           Wordpress. From design to deployment I handle all the clients
-          requirements. I am looking for new opportunities. If you looking for a
-          developer to hire or have any queries, just leave a{" "}
+          requirements. I am looking for new opportunities. If you are looking
+          for a developer to hire or have any queries, just leave a{" "}
           <a
             href="https://www.linkedin.com/in/foysalimtiaz"
             target="_blank"
@@ -68,7 +69,7 @@ const HomePage = () => {
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
       {/* WORK EXPERIENCE */}
-      <div>
+      <div className="px-4">
         <div>
           <h1 className="text-neutral-800 dark:text-neutral-300 font-normal  mb-5 ">
             Work experience so far
@@ -78,7 +79,7 @@ const HomePage = () => {
       </div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
       {/* PROJECT SECTION */}
-      <div className="flex flex-col">
+      <div className="flex flex-col px-4">
         <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-5">
           Things I have built so far
         </h1>
@@ -105,7 +106,7 @@ const HomePage = () => {
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 mt-10 mb-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
 
       {/* BLOG SECTION */}
-      <div className="flex flex-col">
+      <div className="flex flex-col px-4">
         <div>
           <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-5">
             Learning and sharing along the journey
@@ -125,7 +126,7 @@ const HomePage = () => {
         </div>
         <div className="flex justify-center">
           <button className="mt-4 w-fit text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-400">
-            <Link to="/projects" onClick={handleLinkClick}>
+            <Link to="/posts" onClick={handleLinkClick}>
               See More..
             </Link>
           </button>
@@ -134,7 +135,7 @@ const HomePage = () => {
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 mt-10 mb-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
 
       {/* CONTACT SECTION */}
-      <div>
+      <div className="px-4">
         <div>
           <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-4">
             Get in touch
@@ -143,7 +144,7 @@ const HomePage = () => {
         <ContactSection />
       </div>
       {/* FOOTER */}
-      <div className="mt-20 pl-2 pb-7 flex justify-between">
+      <div className="mt-20 px-4 pb-7 flex justify-between">
         <p className="text-[11px] text-neutral-500 dark:text-neutral-400 dark:text-opacity-80">
           Template Inspired from{" "}
           <a
