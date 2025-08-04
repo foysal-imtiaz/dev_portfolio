@@ -1,16 +1,24 @@
 [
   {
     "title": "The Future of AI: What's Next?",
-    "description": "Explore the exciting advancements and potential future directions of artificial intelligence, from machine learning to neural networks and beyond.",
-    "image": "https://www.droptica.com/sites/droptica.com/files/styles/blog_banner_image/public/media/image/dark%20background.jpg?itok=NPC7pcFP",
+    "image": "https://assets.chanhdai.com/images/blog/react-wheel-picker-joins-vercel-open-source-program.webp",
     "readMoreLink": "https://example.com/blog/ai-future",
     "date": "2025-07-28"
-  },
-  {
+  },  {
     "title": "Mastering Remote Work: Tips for Productivity",
-    "description": "Discover effective strategies and tools to stay productive and motivated while working remotely, ensuring a healthy work-life balance.",
-    "image": "https://www.droptica.com/sites/droptica.com/files/styles/blog_banner_image/public/media/image/dark%20background.jpg?itok=NPC7pcFP",
+    "image": "https://assets.chanhdai.com/images/blog/grateful-for-the-feedback-on-my-portfolio-website.webp",
+    "readMoreLink": "https://example.com/blog/remote-work-tips",
+    "date": "2025-07-25"
+  },  {
+    "title": "Mastering Remote Work: Tips for Productivity",
+    "image": "https://assets.chanhdai.com/images/blog/grateful-for-the-feedback-on-my-portfolio-website.webp",
+    "readMoreLink": "https://example.com/blog/remote-work-tips",
+    "date": "2025-07-25"
+  },  {
+    "title": "Mastering Remote Work: Tips for Productivity",
+    "image": "https://assets.chanhdai.com/images/blog/grateful-for-the-feedback-on-my-portfolio-website.webp",
     "readMoreLink": "https://example.com/blog/remote-work-tips",
     "date": "2025-07-25"
   }
+
 ]

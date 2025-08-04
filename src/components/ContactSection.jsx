@@ -14,8 +14,8 @@ const ContactSection = () => {
         variants={variants}
         className="text-neutral-500 w-full md:w-1/2 dark:text-neutral-400 dark:text-opacity-80"
       >
-        I'm open new opportunities. Whether you have a question or want to say
-        hi, drop a message in{" "}
+        I'm open to new opportunities. Whether you have a question or want to
+        say hi, drop a message in{" "}
         <a
           href="https://www.linkedin.com/in/foysalimtiaz"
           target="_blank"

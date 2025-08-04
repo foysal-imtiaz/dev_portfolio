@@ -61,7 +61,7 @@ const HomePage = () => {
           <a
             href="https://www.linkedin.com/in/foysalimtiaz"
             target="_blank"
-            className="hover:font-bold font-semibold"
+            className="font-semibold hover:text-blue-500"
           >
             message
           </a>
@@ -104,26 +104,23 @@ const HomePage = () => {
       {/* BLOG SECTION */}
       <SectionTitles title="Sharing knowledge along learning" />
 
-      <div className="flex flex-col px-4">
-        <div className="flex flex-col gap-7">
-          {blogPostData.slice(0, 2).map((post, index) => (
-            <BlogPost
-              key={index}
-              title={post.title}
-              description={post.description}
-              image={post.image}
-              readMoreLink={post.readMoreLink}
-              date={post.date}
-            />
-          ))}
-        </div>
-        <div className="flex justify-center">
-          <button className="mt-4 w-fit text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-400">
-            <Link to="/posts" onClick={handleLinkClick}>
-              See More..
-            </Link>
-          </button>
-        </div>
+      <div className="px-4 gap-8 grid md:grid-cols-2 mb-4">
+        {blogPostData.slice(0, 2).map((post, index) => (
+          <BlogPost
+            key={index}
+            title={post.title}
+            image={post.image}
+            readMoreLink={post.readMoreLink}
+            date={post.date}
+          />
+        ))}
+      </div>
+      <div className="flex justify-center">
+        <button className="mt-4 w-fit text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-400">
+          <Link to="/posts" onClick={handleLinkClick}>
+            See More..
+          </Link>
+        </button>
       </div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 mt-10 mb-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
 

@@ -36,7 +36,7 @@ const BlogPostPage = () => {
         </div>
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
-      <div className="flex flex-col gap-7 px-4">
+      <motion.div className="px-4 gap-8 grid md:grid-cols-2">
         {blogPostData.map((post, index) => (
           <BlogPost
             key={index}
@@ -47,7 +47,7 @@ const BlogPostPage = () => {
             date={post.date}
           />
         ))}
-      </div>
+      </motion.div>
 
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
 

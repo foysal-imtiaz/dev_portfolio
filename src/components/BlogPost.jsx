@@ -1,47 +1,38 @@
 import { motion } from "framer-motion";
 import { transition, variants } from "../utils/motionAnimation";
 
-const BlogPost = ({ title, description, image, readMoreLink, date }) => {
+const BlogPost = ({ title, image, readMoreLink, date }) => {
   return (
     <motion.div
+      // initial="hidden"
+      //   whileInView="visible"
+      //   transition={{ staggerChildren: 0.04 }}
+
       initial="hidden"
       whileInView="visible"
       transition={{ staggerChildren: 0.04 }}
-      className="flex justify-between items-center px-4 py-4 mt-3 md:mt-0  md:hover:shadow-md transition-all duration-300   md:shadow-none rounded-lg border-gray-200 border-[1px] md:border-none dark:border-gray-800"
+      className=""
     >
-      <motion.div
-        transition={transition}
-        variants={variants}
-        className="w-full xl:w-2/3 "
-      >
-        <h1 className="text-md font-bold tracking-tight pb-2 dark:text-neutral-300 text-neutral-800">
-          <a href={readMoreLink} target="_blank" className="cursor-pointer">
-            {title}
-          </a>
-        </h1>
-        <p className="text-[15px] text-neutral-500 dark:text-neutral-400 dark:text-opacity-80 pb-4">
-          {description}
-          <span className="text-neutral-700 dark:text-neutral-400 dark:hover:text-blue-500 cursor-pointer font-medium text-[15px] hover:text-blue-500">
-            {" "}
-            <a href={readMoreLink} target="_blank">
-              Read more...
-            </a>
-          </span>
-        </p>
-        <span className="text-[13px] text-neutral-600 dark:text-neutral-400 dark:text-opacity-80">
-          Posted on: {date}
-        </span>
-      </motion.div>
-      <motion.div
-        transition={transition}
-        variants={variants}
-        className="hidden xl:block xl:pl-2"
-      >
-        <img
-          className="h-28  border rounded-lg dark:border-none"
-          src={image}
-          alt=""
-        />
+      <motion.div transition={transition} variants={variants}>
+        <a href={readMoreLink} target="_blank">
+          <div>
+            <div>
+              <img
+                src={image}
+                alt=""
+                className="rounded-xl w-full min-h-[180px]"
+              />
+            </div>
+            <div>
+              <h1 className="hover:underline underline-offset-4 p-2 pt-4 text-neutral-800 font-semibold dark:text-neutral-300">
+                {title}
+              </h1>
+            </div>
+            <p className="pl-2 text-sm text-neutral-500 dark:text-neutral-400">
+              {date}
+            </p>
+          </div>
+        </a>
       </motion.div>
     </motion.div>
   );

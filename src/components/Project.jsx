@@ -15,14 +15,14 @@ const Project = ({ title, description, image, github_link, live_link }) => {
         variants={variants}
         className=" md:w-fit"
       >
-        <img src={image} alt="" className="h-40 w-72 rounded-md" />
+        <img src={image} alt="" className="h-40 w-72 rounded-xl" />
       </motion.div>
       <motion.div
         transition={transition}
         variants={variants}
         className="p-1 md:pt-6  flex flex-col justify-center md:w-fit md:hover:pl-3 transition-all duration-300"
       >
-        <h1 className="font-medium tracking-tight text-neutral-600 dark:text-neutral-300 pb-1 ">
+        <h1 className="font-medium tracking-tight text-neutral-700 dark:text-neutral-300 pb-1 ">
           {title}
         </h1>
         <p className="text-[15px] dark:text-neutral-400 dark:text-opacity-80 text-neutral-500  pb-2">
