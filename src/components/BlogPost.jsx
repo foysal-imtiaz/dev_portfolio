@@ -7,7 +7,7 @@ const BlogPost = ({ title, description, image, readMoreLink, date }) => {
       initial="hidden"
       whileInView="visible"
       transition={{ staggerChildren: 0.04 }}
-      className="flex justify-between items-center px-4 py-4  md:hover:shadow-md transition-all duration-300   md:shadow-none rounded-lg border-gray-200 border-[1px] md:border-none dark:border-gray-800"
+      className="flex justify-between items-center px-4 py-4 mt-3 md:mt-0  md:hover:shadow-md transition-all duration-300   md:shadow-none rounded-lg border-gray-200 border-[1px] md:border-none dark:border-gray-800"
     >
       <motion.div
         transition={transition}
