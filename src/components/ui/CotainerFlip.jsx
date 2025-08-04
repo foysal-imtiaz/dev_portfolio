@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import { cn } from "../../utils/tailwind.js";
 
 export function ContainerTextFlip({
-  words = ["Full Stack", "Front End", "Back End", "Database", "AI Integration"],
-  interval = 4000,
+  words = ["Full Stack", "Front End", "Back End", "Database"],
+  interval = 2500,
   className,
   textClassName,
   animationDuration = 800,
@@ -37,7 +37,7 @@ export function ContainerTextFlip({
   }, [words, interval]);
 
   return (
-    <motion.p
+    <motion.div
       layout
       layoutId={`words-here-${id}`}
       animate={{ width }}
@@ -80,6 +80,6 @@ export function ContainerTextFlip({
           ))}
         </motion.div>
       </motion.div>
-    </motion.p>
+    </motion.div>
   );
 }

@@ -140,7 +140,7 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <motion.div
                 key={index}
-                transition={transition}
+                transition={{ duration: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
                 variants={variants}
               >
                 <Link

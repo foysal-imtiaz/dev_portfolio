@@ -15,7 +15,7 @@ const Project = ({ title, description, image, github_link, live_link }) => {
         variants={variants}
         className=" md:w-fit"
       >
-        <img src={image} alt="" className="h-40 w-72 rounded-lg" />
+        <img src={image} alt="" className="h-40 w-72 rounded-md" />
       </motion.div>
       <motion.div
         transition={transition}

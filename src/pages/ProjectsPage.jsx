@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { transition, variants } from "../utils/motionAnimation";
+import SectionTitles from "../components/SectionTitles";
 
 const ProjectsPage = () => {
   return (
@@ -50,12 +51,9 @@ const ProjectsPage = () => {
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
 
       {/* CONTACT SECTION */}
+      <SectionTitles title="Get in touch" />
+
       <div className="px-4">
-        <div>
-          <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-4">
-            Get in touch
-          </h1>
-        </div>
         <ContactSection />
       </div>
       {/* FOOTER */}

@@ -10,6 +10,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { transition, variants } from "../utils/motionAnimation";
 import { Link } from "react-router";
 import { ContainerTextFlip } from "../components/ui/CotainerFlip";
+import SectionTitles from "../components/SectionTitles";
 
 const HomePage = () => {
   const handleLinkClick = () => {
@@ -29,7 +30,7 @@ const HomePage = () => {
           <motion.span
             transition={transition}
             variants={variants}
-            className="flex md:hidden"
+            className="block md:hidden"
           >
             <ContainerTextFlip />
           </motion.span>
@@ -69,20 +70,15 @@ const HomePage = () => {
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
       {/* WORK EXPERIENCE */}
+      <SectionTitles title="Work experience so far" />
       <div className="px-4">
-        <div>
-          <h1 className="text-neutral-800 dark:text-neutral-300 font-normal  mb-5 ">
-            Work experience so far
-          </h1>
-        </div>
         <Experience />
       </div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
       {/* PROJECT SECTION */}
+      <SectionTitles title="Things i have built" />
+
       <div className="flex flex-col px-4">
-        <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-5">
-          Things I have built so far
-        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
           {projectsData.slice(0, 3).map((project, index) => (
             <Project
@@ -106,12 +102,9 @@ const HomePage = () => {
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 mt-10 mb-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
 
       {/* BLOG SECTION */}
+      <SectionTitles title="Sharing knowledge along learning" />
+
       <div className="flex flex-col px-4">
-        <div>
-          <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-5">
-            Learning and sharing along the journey
-          </h1>
-        </div>
         <div className="flex flex-col gap-7">
           {blogPostData.slice(0, 2).map((post, index) => (
             <BlogPost
@@ -135,12 +128,9 @@ const HomePage = () => {
       <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 mt-10 mb-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
 
       {/* CONTACT SECTION */}
+      <SectionTitles title="Get in touch" />
+
       <div className="px-4">
-        <div>
-          <h1 className="text-neutral-800 font-normal dark:text-neutral-300 mb-4">
-            Get in touch
-          </h1>
-        </div>
         <ContactSection />
       </div>
       {/* FOOTER */}
