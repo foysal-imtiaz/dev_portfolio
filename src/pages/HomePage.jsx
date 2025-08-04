@@ -71,6 +71,7 @@ const HomePage = () => {
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
       {/* WORK EXPERIENCE */}
       <SectionTitles title="Work experience so far" />
+
       <div className="px-4">
         <Experience />
       </div>
@@ -104,7 +105,7 @@ const HomePage = () => {
       {/* BLOG SECTION */}
       <SectionTitles title="Sharing knowledge along learning" />
 
-      <div className="px-4 gap-8 grid md:grid-cols-2 mb-4">
+      <div className="px-4 gap-8 grid md:grid-cols-2 mb-4 mt-2">
         {blogPostData.slice(0, 2).map((post, index) => (
           <BlogPost
             key={index}

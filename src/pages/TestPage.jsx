@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { transition, variants } from "../utils/motionAnimation";
-import blogPostData from "../blogPostData.json";
+import SectionTitles from "../components/SectionTitles";
 
 const ResoucePage = () => {
   return (
@@ -8,6 +8,7 @@ const ResoucePage = () => {
       initial="hidden"
       whileInView="visible"
       transition={{ staggerChildren: 0.04 }}
+      className="h-[200vh]"
     >
       <motion.div
         initial="hidden"
@@ -34,9 +35,10 @@ const ResoucePage = () => {
       </motion.div>
 
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
+      <SectionTitles title="Get in touch" />
 
       {/* TEST HERE  */}
-      <div className="px-4 gap-8 grid md:grid-cols-2 lg:grid-cols-2"></div>
+      <div className="px-4"></div>
     </motion.div>
   );
 };

@@ -20,7 +20,7 @@ function App() {
               <Route path="/projects" element={<ProjectsPage />} />
               <Route path="/posts" element={<BlogPostPage />} />
               <Route path="/resources" element={<ResourcePage />} />
-              <Route path="/test" element={<TestPage />} />
+              {/* <Route path="/test" element={<TestPage />} /> */}
             </Routes>
           </Container>
         </BrowserRouter>

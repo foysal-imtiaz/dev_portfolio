@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { cn } from "../../utils/tailwind.js";
 
 export function ContainerTextFlip({
-  words = ["Full Stack", "Front End", "Back End", "Database"],
+  words = ["Full Stack", "Front End", "Back End", "Database", "AI Integration"],
   interval = 2500,
   className,
   textClassName,
@@ -43,7 +43,7 @@ export function ContainerTextFlip({
       animate={{ width }}
       transition={{ duration: animationDuration / 5000 }}
       className={cn(
-        "text-neutral-500 dark:text-neutral-400  border-[1px] h-fit border-gray-300 dark:border-gray-600 opacity-80 shadow-sm py-[2px] px-2 rounded-md text-sm",
+        "text-neutral-500 dark:text-neutral-400  border-[1px] h-fit border-gray-300 dark:border-gray-600 opacity-80 shadow-sm pt-[1px] pb-[2px] px-1 rounded-md text-sm",
         "relative inline-block text-center",
         "dark:shadow-[inset_0_-1px_#10171e,inset_0_0_0_1px_hsla(205,89%,46%,.24),_0_4px_8px_#00000052]",
         className
@@ -59,7 +59,7 @@ export function ContainerTextFlip({
         ref={textRef}
         layoutId={`word-div-${words[currentWordIndex]}-${id}`}
       >
-        <motion.div className="inline-block">
+        <motion.div className="inline-block text-nowrap">
           {words[currentWordIndex].split("").map((letter, index) => (
             <motion.span
               key={index}

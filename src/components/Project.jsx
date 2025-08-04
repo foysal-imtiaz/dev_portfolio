@@ -35,14 +35,14 @@ const Project = ({ title, description, image, github_link, live_link }) => {
             target="_blank"
             className="cursor-pointer text-neutral-500 dark:text-neutral-400 dark:text-opacity-80 text-[13px] pr-3 hover:text-blue-500 dark:hover:text-blue-500"
           >
-            Github <MdArrowOutward className="inline" />
+            Github
           </a>
           <a
             href={live_link}
             target="_blank"
             className="cursor-pointer dark:text-neutral-400 dark:text-opacity-80 text-neutral-500 text-[13px] hover:text-blue-500 dark:hover:text-blue-500"
           >
-            Live <MdArrowOutward className="inline" />
+            Live
           </a>
         </div>
       </motion.div>
