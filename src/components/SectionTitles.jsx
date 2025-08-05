@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { transition, variants } from "../utils/motionAnimation";
+import { variants } from "../utils/motionAnimation";
 
 const SectionTitles = ({ title }) => {
   return (
@@ -17,7 +17,7 @@ const SectionTitles = ({ title }) => {
 
         <motion.h1
           transition={{
-            duration: 1.2,
+            duration: 1,
             ease: [0.5, 0.2, 0.5, 2],
           }}
           variants={variants}
