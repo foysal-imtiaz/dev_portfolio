@@ -12,22 +12,44 @@ const ContactSection = () => {
       <motion.p
         transition={transition}
         variants={variants}
-        className="text-neutral-500 w-full md:w-1/2 dark:text-neutral-400 dark:text-opacity-80"
+        className="text-neutral-600 w-full md:w-2/3 dark:text-neutral-400 text-[16px]"
       >
         I'm open to new opportunities. Whether you have a question or want to
-        say hi, drop a message in{" "}
+        say hi, drop a message.
+      </motion.p>
+      <motion.div transition={transition} variants={variants} className="pt-3">
+        <p className="text-[16px] text-neutral-600 dark:text-neutral-400 pr-16 inline">
+          LinkedIn
+        </p>{" "}
         <a
           href="https://www.linkedin.com/in/foysalimtiaz"
-          target="_blank"
-          className="font-semibold text-sm text-neutral-600  hover:text-blue-500 dark:text-neutral-300 opacity-80 dark:hover:text-blue-500"
+          className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-300 underline underline-offset-2"
         >
-          LinkedIn
-        </a>{" "}
-        or reach me at{" "}
-        <span className="font-semibold text-sm text-neutral-600 dark:text-neutral-300 opacity-80 dark:hover:text-neutral-200">
+          linkedin.com/in/foysalimtiaz
+        </a>
+      </motion.div>
+      <motion.div transition={transition} variants={variants} className="pt-3">
+        <p className="text-[16px] text-neutral-600 dark:text-neutral-400 pr-[74px] inline">
+          GitHub
+        </p>{" "}
+        <a
+          href="https://github.com/foysal-imtiaz/"
+          className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-300 underline underline-offset-2 "
+        >
+          github.com/foysal-imtiaz
+        </a>
+      </motion.div>
+      <motion.div transition={transition} variants={variants} className="pt-3">
+        <p className="text-[16px] text-neutral-600 dark:text-neutral-400 pr-[86px] inline">
+          Email
+        </p>{" "}
+        <a
+          href="mailto:foysalimtiaz96@gmail.com"
+          className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-300 underline underline-offset-2 "
+        >
           foysalimtiaz96@gmail.com
-        </span>
-      </motion.p>
+        </a>
+      </motion.div>
     </motion.div>
   );
 };

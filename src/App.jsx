@@ -6,7 +6,7 @@ import HomePage from "./pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router";
 import BlogPostPage from "./pages/BlogPostPage";
 import ResourcePage from "./pages/ResoucePage";
-// import TestPage from "./pages/TestPage";
+import TestPage from "./pages/TestPage";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
               <Route path="/projects" element={<ProjectsPage />} />
               <Route path="/posts" element={<BlogPostPage />} />
               <Route path="/resources" element={<ResourcePage />} />
-              {/* <Route path="/test" element={<TestPage />} /> */}
+              <Route path="/test" element={<TestPage />} />
             </Routes>
           </Container>
         </BrowserRouter>

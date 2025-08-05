@@ -21,7 +21,7 @@ const SectionTitles = ({ title }) => {
             ease: [0.5, 0.2, 0.5, 2],
           }}
           variants={variants}
-          className="text-neutral-800 px-1 font-normal dark:text-neutral-300 m-0"
+          className="text-neutral-800 px-1 font-normal  dark:text-neutral-300 m-0"
         >
           {title}
         </motion.h1>

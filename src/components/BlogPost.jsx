@@ -24,7 +24,7 @@ const BlogPost = ({ title, image, readMoreLink, date }) => {
               />
             </div>
             <div>
-              <h1 className="hover:underline underline-offset-4 p-2 pt-4 text-neutral-800 font-semibold dark:text-neutral-300">
+              <h1 className="hover:underline underline-offset-4 p-2 pt-4 text-neutral-800 font-semibold dark:text-neutral-200">
                 {title}
               </h1>
             </div>

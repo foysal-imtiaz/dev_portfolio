@@ -14,7 +14,7 @@ const Resource = ({ title, link, site_name }) => {
         <motion.p
           transition={transition}
           variants={variants}
-          className="inline text-neutral-500 dark:text-neutral-400 dark:text-opacity-80"
+          className="inline text-neutral-600 dark:text-neutral-400 text-[16px]"
         >
           <span className=" text-blue-600 dark:text-blue-800">➤</span> {title}{" "}
           <a

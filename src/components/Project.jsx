@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { transition, variants } from "../utils/motionAnimation";
-import { MdArrowOutward } from "react-icons/md";
 
 const Project = ({ title, description, image, github_link, live_link }) => {
   return (

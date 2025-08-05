@@ -27,7 +27,7 @@ const ResoucePage = () => {
           <motion.p
             transition={transition}
             variants={variants}
-            className="text-neutral-500 mt-4 md:w-[65%] dark:text-neutral-400 dark:text-opacity-80"
+            className="text-neutral-600 mt-4 md:w-[65%] dark:text-neutral-400 leading-relaxed text-[16px]"
           >
             Here I share cool and helpful resouces and random stuff that i found
             online. Links are provided with them. Check them out below!
@@ -69,10 +69,10 @@ const ResoucePage = () => {
         </p>
         <div className="flex gap-2 pr-2">
           <a href="https://github.com/foysal-imtiaz/" target="_blank">
-            <FaGithub className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-300" />
+            <FaGithub className=" cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-300" />
           </a>
           <a href="https://www.linkedin.com/in/foysalimtiaz" target="_blank">
-            <FaLinkedinIn className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-300" />
+            <FaLinkedinIn className=" cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-300" />
           </a>
         </div>
       </div>
