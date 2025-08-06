@@ -65,14 +65,16 @@ export function ContainerTextFlip({
               key={index}
               initial={{
                 opacity: 0,
-                filter: "blur(10px)",
+                y: 10, //
               }}
               animate={{
                 opacity: 1,
-                filter: "blur(0px)",
+                y: 0, //
               }}
               transition={{
                 delay: index * 0.02,
+                duration: 0.4,
+                ease: "easeOut",
               }}
             >
               {letter}

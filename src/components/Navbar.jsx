@@ -5,6 +5,7 @@ import ThemeToggle from "./ThemeToggle";
 import { LuMenu } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
+import { transition, variants } from "../utils/motionAnimation";
 
 // NAVBAR LINKS
 const navLinks = [
@@ -13,13 +14,6 @@ const navLinks = [
   { name: "Notes", path: "/notes" },
   { name: "Resources", path: "/resources" },
 ];
-
-// MOTION Animation Values
-const transition = { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] };
-const variants = {
-  hidden: { filter: "blur(10px)", transform: "translateY(20%)", opacity: 0 },
-  visible: { filter: "blur(0)", transform: "translateY(0)", opacity: 1 },
-};
 
 // MAIN Component
 const Navbar = () => {
