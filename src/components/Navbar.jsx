@@ -145,7 +145,10 @@ const Navbar = () => {
               >
                 <Link
                   to={link.path}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => {
+                    setMenuOpen(false);
+                    handleLinkClick();
+                  }}
                   className="block py-2 px-3 rounded-md transition-colors hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-neutral-700  dark:hover:text-white"
                 >
                   {link.name}

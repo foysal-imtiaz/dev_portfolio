@@ -28,8 +28,7 @@ const Experience = () => {
           projects requirements.
         </p>
         <p className="text-[12px] text-neutral-500 opacity-90 dark:text-neutral-400 dark:text-opacity-80">
-          ReactJS / NodeJS / Express / MongoDB / Tailwind / Next.js / TypeScript
-          / Wordpress
+          ReactJS · NodeJS · Express · MongoDB · Tailwind · Next.js · TypeScript
         </p>
       </motion.div>
     </motion.div>

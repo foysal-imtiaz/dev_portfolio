@@ -80,9 +80,9 @@ const HomePage = () => {
       {/* PROJECT SECTION */}
       <SectionTitles title="Things i have built" />
 
-      <div className="flex flex-col ">
+      <div className="flex flex-col">
         <div>
-          {projectData.slice(0, 2).map((project, index) => (
+          {projectData.slice(0, 3).map((project, index) => (
             <ProjectTest key={index} project={project} />
           ))}
         </div>
