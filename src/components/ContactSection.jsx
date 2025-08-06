@@ -18,7 +18,7 @@ const ContactSection = () => {
         say hi, drop a message.
       </motion.p>
       <motion.div transition={transition} variants={variants} className="pt-3">
-        <p className="text-[16px] text-neutral-600 dark:text-neutral-400 pr-16 inline">
+        <p className="text-[16px] text-neutral-600 dark:text-neutral-400 pr-[40px] inline">
           LinkedIn
         </p>{" "}
         <a
@@ -29,7 +29,7 @@ const ContactSection = () => {
         </a>
       </motion.div>
       <motion.div transition={transition} variants={variants} className="pt-3">
-        <p className="text-[16px] text-neutral-600 dark:text-neutral-400 pr-[74px] inline">
+        <p className="text-[16px] text-neutral-600 dark:text-neutral-400 pr-[50px] inline">
           GitHub
         </p>{" "}
         <a
@@ -40,7 +40,7 @@ const ContactSection = () => {
         </a>
       </motion.div>
       <motion.div transition={transition} variants={variants} className="pt-3">
-        <p className="text-[16px] text-neutral-600 dark:text-neutral-400 pr-[86px] inline">
+        <p className="text-[16px] text-neutral-600 dark:text-neutral-400 pr-[61px] inline">
           Email
         </p>{" "}
         <a

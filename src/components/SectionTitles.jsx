@@ -17,7 +17,7 @@ const SectionTitles = ({ title }) => {
 
         <motion.h1
           transition={{
-            duration: 1,
+            duration: 1.1,
             ease: [0.5, 0.2, 0.5, 2],
           }}
           variants={variants}

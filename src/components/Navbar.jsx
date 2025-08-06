@@ -10,7 +10,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "Projects", path: "/projects" },
-  { name: "Posts", path: "/posts" },
+  { name: "Notes", path: "/notes" },
   { name: "Resources", path: "/resources" },
 ];
 
@@ -159,13 +159,13 @@ const Navbar = () => {
               className="flex gap-4 pt-1 items-center justify-center"
             >
               <a href="https://github.com/foysal-imtiaz/" target="_blank">
-                <FaGithub className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300" />
+                <FaGithub className="cursor-pointer h-5 w-5 text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300" />
               </a>
               <a
                 href="https://www.linkedin.com/in/foysalimtiaz"
                 target="_blank"
               >
-                <FaLinkedinIn className="hover:h-6 hover:w-6 cursor-pointer h-5 w-5 text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300" />
+                <FaLinkedinIn className="cursor-pointer h-5 w-5 text-neutral-500 hover:text-neutral-800 dark:text-neutral-400 dark:hover:text-neutral-300" />
               </a>
             </motion.div>
           </motion.div>

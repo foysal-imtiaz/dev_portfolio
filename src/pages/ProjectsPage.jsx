@@ -1,5 +1,5 @@
-import Project from "../components/Project";
-import projectsData from "../projectData.json";
+import ProjectTest from "../components/ProjectTest";
+import projectData from "../projectData.json";
 import ContactSection from "../components/ContactSection";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -26,7 +26,7 @@ const ProjectsPage = () => {
           <motion.p
             transition={transition}
             variants={variants}
-            className="text-neutral-600 mt-4 md:w-[65%] dark:text-neutral-400 leading-relaxed text-[16px]"
+            className="text-neutral-600 mt-4 md:w-[65%] dark:text-neutral-400 text-[16px]"
           >
             Building projects is a great way to learn. Be it a small, pet
             project, the learning and impact is high. I have been building
@@ -35,16 +35,9 @@ const ProjectsPage = () => {
         </div>
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
-      <div className="px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
-        {projectsData.map((project, index) => (
-          <Project
-            key={index}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            github_link={project.github_link}
-            live_link={project.live_link}
-          />
+      <div>
+        {projectData.map((project, index) => (
+          <ProjectTest key={index} project={project} />
         ))}
       </div>
 
@@ -59,13 +52,33 @@ const ProjectsPage = () => {
       {/* FOOTER */}
       <div className="mt-20 px-4 pb-7 flex justify-between">
         <p className="text-[11px] text-neutral-500">
-          Template Inspired from{" "}
           <a
-            className="text-blue-500 dark:text-opacity-60"
+            className="hover:text-blue-800 pr-1"
             href="https://minimal-portfolio-website-template.vercel.app/"
             target="_blank"
           >
-            Here
+            Templates
+          </a>
+          <a
+            className="hover:text-blue-800 pr-1"
+            href="https://chanhdai.com/"
+            target="_blank"
+          >
+            That
+          </a>
+          <a
+            className="hover:text-blue-800 pr-1"
+            href="https://www.remi-jara.fr/"
+            target="_blank"
+          >
+            Inspired
+          </a>
+          <a
+            className="hover:text-blue-800"
+            href="https://ouassim.tech/"
+            target="_blank"
+          >
+            Me
           </a>
         </p>
         <div className="flex gap-2 pr-2">

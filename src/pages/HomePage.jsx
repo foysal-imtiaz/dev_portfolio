@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Project from "../components/Project";
-import projectsData from "../projectData.json";
+import ProjectTest from "../components/ProjectTest";
+import projectData from "../projectData.json";
 import BlogPost from "../components/BlogPost";
 import blogPostData from "../blogPostData.json";
 import Experience from "../components/Experience";
@@ -11,6 +11,7 @@ import { transition, variants } from "../utils/motionAnimation";
 import { Link } from "react-router";
 import { ContainerTextFlip } from "../components/ui/CotainerFlip";
 import SectionTitles from "../components/SectionTitles";
+import { RiArrowDownSLine } from "react-icons/ri";
 
 const HomePage = () => {
   const handleLinkClick = () => {
@@ -52,7 +53,7 @@ const HomePage = () => {
         <motion.p
           transition={transition}
           variants={variants}
-          className="text-neutral-600 dark:text-neutral-400 text-[16px] leading-relaxed  mt-4 md:w-[65%]"
+          className="text-neutral-600 dark:text-neutral-400 text-[16px]  mt-4 md:w-[65%]"
         >
           Hi, I am a Full Stack developer proficient in MERN stack, NextJS and
           Wordpress. From design to deployment I handle all the clients
@@ -79,23 +80,16 @@ const HomePage = () => {
       {/* PROJECT SECTION */}
       <SectionTitles title="Things i have built" />
 
-      <div className="flex flex-col px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-2">
-          {projectsData.slice(0, 3).map((project, index) => (
-            <Project
-              key={index}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              github_link={project.github_link}
-              live_link={project.live_link}
-            />
+      <div className="flex flex-col ">
+        <div>
+          {projectData.slice(0, 2).map((project, index) => (
+            <ProjectTest key={index} project={project} />
           ))}
         </div>
         <div className="flex justify-center">
           <button className="mt-2 w-fit text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-400">
             <Link to="/projects" onClick={handleLinkClick}>
-              See More..
+              See More <RiArrowDownSLine className="inline" />
             </Link>
           </button>
         </div>
@@ -119,7 +113,7 @@ const HomePage = () => {
       <div className="flex justify-center">
         <button className="mt-4 w-fit text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-400">
           <Link to="/posts" onClick={handleLinkClick}>
-            See More..
+            See More <RiArrowDownSLine className="inline" />
           </Link>
         </button>
       </div>
@@ -133,14 +127,34 @@ const HomePage = () => {
       </div>
       {/* FOOTER */}
       <div className="mt-20 px-4 pb-7 flex justify-between">
-        <p className="text-[11px] text-neutral-500 dark:text-neutral-400 dark:text-opacity-80">
-          Template Inspired from{" "}
+        <p className="text-[11px] text-neutral-500">
           <a
-            className="text-blue-500 dark:text-opacity-60 hover:text-blue-400"
+            className="hover:text-blue-800 pr-1"
             href="https://minimal-portfolio-website-template.vercel.app/"
             target="_blank"
           >
-            Here
+            Templates
+          </a>
+          <a
+            className="hover:text-blue-800 pr-1"
+            href="https://chanhdai.com/"
+            target="_blank"
+          >
+            That
+          </a>
+          <a
+            className="hover:text-blue-800 pr-1"
+            href="https://www.remi-jara.fr/"
+            target="_blank"
+          >
+            Inspired
+          </a>
+          <a
+            className="hover:text-blue-800"
+            href="https://ouassim.tech/"
+            target="_blank"
+          >
+            Me
           </a>
         </p>
         <div className="flex gap-2 pr-2">

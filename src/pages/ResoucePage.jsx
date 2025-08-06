@@ -27,7 +27,7 @@ const ResoucePage = () => {
           <motion.p
             transition={transition}
             variants={variants}
-            className="text-neutral-600 mt-4 md:w-[65%] dark:text-neutral-400 leading-relaxed text-[16px]"
+            className="text-neutral-600 mt-4 md:w-[65%] dark:text-neutral-400 text-[16px]"
           >
             Here I share cool and helpful resouces and random stuff that i found
             online. Links are provided with them. Check them out below!
@@ -58,13 +58,33 @@ const ResoucePage = () => {
       {/* FOOTER */}
       <div className="mt-20 px-4 pb-7 flex justify-between">
         <p className="text-[11px] text-neutral-500">
-          Template Inspired from{" "}
           <a
-            className="text-blue-500 dark:text-opacity-60"
+            className="hover:text-blue-800 pr-1"
             href="https://minimal-portfolio-website-template.vercel.app/"
             target="_blank"
           >
-            Here
+            Templates
+          </a>
+          <a
+            className="hover:text-blue-800 pr-1"
+            href="https://chanhdai.com/"
+            target="_blank"
+          >
+            That
+          </a>
+          <a
+            className="hover:text-blue-800 pr-1"
+            href="https://www.remi-jara.fr/"
+            target="_blank"
+          >
+            Inspired
+          </a>
+          <a
+            className="hover:text-blue-800"
+            href="https://ouassim.tech/"
+            target="_blank"
+          >
+            Me
           </a>
         </p>
         <div className="flex gap-2 pr-2">

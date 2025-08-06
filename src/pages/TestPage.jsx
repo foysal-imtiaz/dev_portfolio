@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { transition, variants } from "../utils/motionAnimation";
 import SectionTitles from "../components/SectionTitles";
-import ProjectTest from "../components/ProjectTest";
 
 const ResoucePage = () => {
   return (
@@ -39,9 +38,6 @@ const ResoucePage = () => {
       <SectionTitles title="Testing new components" />
 
       {/* TEST HERE  */}
-      <div className="">
-        <ProjectTest />
-      </div>
     </motion.div>
   );
 };
