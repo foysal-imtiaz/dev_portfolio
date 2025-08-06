@@ -5,13 +5,24 @@ export default function ProjectTest({ project }) {
   return (
     <div className="relative pt-2 pl-4 pr-4 pb-2 mb-8 shadow-md dark:shadow-lg max-w-6xl mx-auto min-h-fit overflow-hidden group">
       {/* Main content */}
+      <div className="mb-4">
+        <h1 className="text-neutral-800 font-semibold dark:text-neutral-200">
+          {project.title}
+        </h1>
+      </div>
+      <div className="md:hidden mb-4">
+        <img
+          src={project.image}
+          alt={`${project.title} Preview`}
+          className=" rounded-lg w-[420px] max-h-[215px] shadow-md md:shadow-lg 
+                      md:transition-transform duration-300 ease-out 
+                      md:group-hover:transform group-hover:-translate-x-2 group-hover:-translate-y-1 md:group-hover:-rotate-3 
+                      md:group-hover:shadow-[-10px_-10px_20px_-5px_rgba(0,0,0,0.15)] 
+                      md:dark:group-hover:shadow-[-12px_-12px_30px_-5px_rgba(0,0,0,0.6)]"
+        />
+      </div>
       <div className="relative z-10 w-full xl:max-w-3xl xl:pr-[330px]">
         {/* Header with title */}
-        <div className="mb-4">
-          <h1 className="text-neutral-800 font-semibold dark:text-neutral-200">
-            {project.title}
-          </h1>
-        </div>
 
         {/* Technology icons - Dynamic rendering */}
         {/* <div className="flex items-center space-x-3 mb-4">

@@ -112,7 +112,7 @@ const HomePage = () => {
       </div>
       <div className="flex justify-center">
         <button className="mt-4 w-fit text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-400">
-          <Link to="/posts" onClick={handleLinkClick}>
+          <Link to="/notes" onClick={handleLinkClick}>
             See More <RiArrowDownSLine className="inline" />
           </Link>
         </button>
