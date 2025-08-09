@@ -70,13 +70,15 @@ const HomePage = () => {
         </motion.p>
       </motion.div>
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
+
       {/* WORK EXPERIENCE */}
-      <SectionTitles title="Work experience so far" />
+      {/* <SectionTitles title="Work experience so far" />
 
       <div className="px-4">
         <Experience />
       </div>
-      <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
+      <span className="dark:bg-[#2a2a2a] dark:shadow-lg dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span> */}
+
       {/* PROJECT SECTION */}
       <SectionTitles title="Things i have built" />
 

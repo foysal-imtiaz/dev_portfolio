@@ -1,8 +1,8 @@
 [
   {
     "title": "LyricsLingua",
-    "description": "A web application for translating song lyrics using AI. This project involved learning new technologies like Nuxt, Stripe, and OpenAI integration.",
-    "image": "https://uideck.com/_next/image?url=https%3A%2F%2Fapi.uideck.com%2Fpublic%2Fimages%2Ffusion.jpg&w=3840&q=75",
+    "description": "A web application for translating song lyrics using AI. This project involved learning new  like Nuxt, Stripe, and OpenAI integration. A web application for translating song lyrics using AI.",
+    "image": "/public/assets/projectImage/test_project.png",
     "github_link": "#",
     "live_link": "#",
     "tech_stack": "ReactJS · NodeJS · Express · MongoDB · Tailwind · Next.js · TypeScript"
