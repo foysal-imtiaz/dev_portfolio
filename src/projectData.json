@@ -2,26 +2,28 @@
   {
     "title": "LyricsLingua",
     "description": "A web application for translating song lyrics using AI. This project involved learning new  like Nuxt, Stripe, and OpenAI integration. A web application for translating song lyrics using AI.",
-    "image": "/public/assets/projectImage/test_project.png",
+    "image": "/assets/projectImage/test_project.png",
     "github_link": "#",
     "live_link": "#",
-    "tech_stack": "ReactJS · NodeJS · Express · MongoDB · Tailwind · Next.js · TypeScript"
+    "tech_stack": ["HTML5", "Node.js", "React", "MongoDB"]
   },
   {
     "title": "NotPad",
-    "description": "A web application for t new technologies like Nuxt, Stripe, and OpenAI integration.  web application for t new technologies like Nuxt.",
+    "description": "A web application for translating song lyrics using AI. This project involved learning new  like Nuxt, Stripe, and OpenAI integration. A web application for translating song lyrics using AI.",
     "image": "../assets/projectImage/project_notepad.png",
     "github_link": "https://github.com/foysal-imtiaz/NotPad",
     "live_link": "https://notpad-bqri.onrender.com/",
-    "tech_stack": "ReactJS · NodeJS · Express · MongoDB · Tailwind · Next.js · TypeScript"
+    "tech_stack": ["HTML5", "Node.js", "React", "Tailwind CSS"]
+
   },
   {
     "title": "Landing Page",
-    "description": "A web application for translating song lyrics using AI. This project involved learning new technologies like Nuxt, Stripe, and OpenAI integration.",
+    "description": "A web application for translating song lyrics using AI. This project involved learning new technologies like Nuxt, Stripe, and OpenAI integrationt involved learning new technologies like Nuxt",
     "image": "https://img.freepik.com/premium-psd/camera-landing-page_23-2148870973.jpg",
     "github_link": "https://github.com/foysal-imtiaz/influencer-gear",
     "live_link": "https://foysal-imtiaz.github.io/influencer-gear/",
-    "tech_stack": "ReactJS · NodeJS · Express · MongoDB · Tailwind · Next.js · TypeScript"
+    "tech_stack": ["HTML5", "Node.js", "React", "Tailwind CSS"]
+
   },
   {
     "title": "Weather App",
@@ -29,7 +31,8 @@
     "image": "https://elements-resized.envatousercontent.com/elements-cover-images/bedca7ea-76f7-424f-bb28-05894ef238fb?w=433&cf_fit=scale-down&q=85&format=auto&s=775e14158197d5246f0418499eb668f42bbbb9ec5258666792817a9b711f8ebb",
     "github_link": "https://github.com/yourusername/ai-portfolio",
     "live_link": "https://github.com/yourusername/ai-portfolio",
-    "tech_stack": "ReactJS · NodeJS · Express · MongoDB · Tailwind · Next.js · TypeScript"
+    "tech_stack": ["HTML5", "Node.js", "React", "Tailwind CSS"]
+
   }
   
 ]

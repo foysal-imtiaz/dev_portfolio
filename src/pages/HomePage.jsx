@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import ProjectTest from "../components/ProjectTest";
+// import ProjectTest from "../components/ProjectTest";
 import projectData from "../projectData.json";
 import BlogPost from "../components/BlogPost";
 import blogPostData from "../blogPostData.json";
-import Experience from "../components/Experience";
+// import Experience from "../components/Experience";
 import ContactSection from "../components/ContactSection";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -12,6 +12,7 @@ import { Link } from "react-router";
 import { ContainerTextFlip } from "../components/ui/CotainerFlip";
 import SectionTitles from "../components/SectionTitles";
 import { RiArrowDownSLine } from "react-icons/ri";
+import Project from "../components/Project";
 
 const HomePage = () => {
   const handleLinkClick = () => {
@@ -85,11 +86,11 @@ const HomePage = () => {
       <div className="flex flex-col">
         <div>
           {projectData.slice(0, 3).map((project, index) => (
-            <ProjectTest key={index} project={project} />
+            <Project key={index} project={project} />
           ))}
         </div>
         <div className="flex justify-center">
-          <button className="mt-2 w-fit text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-400">
+          <button className=" w-fit text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-400">
             <Link to="/projects" onClick={handleLinkClick}>
               See More <RiArrowDownSLine className="inline" />
             </Link>

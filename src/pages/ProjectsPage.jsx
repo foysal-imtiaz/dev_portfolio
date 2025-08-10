@@ -1,4 +1,4 @@
-import ProjectTest from "../components/ProjectTest";
+import Project from "../components/Project";
 import projectData from "../projectData.json";
 import ContactSection from "../components/ContactSection";
 import { FaGithub } from "react-icons/fa6";
@@ -37,7 +37,7 @@ const ProjectsPage = () => {
       <span className="dark:bg-[#2a2a2a] dark:shadow-xl dark:opacity-60 my-12 w-full h-[1px] block bg-gray-300 opacity-50"></span>
       <div>
         {projectData.map((project, index) => (
-          <ProjectTest key={index} project={project} />
+          <Project key={index} project={project} />
         ))}
       </div>
 

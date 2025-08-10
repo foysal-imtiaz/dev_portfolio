@@ -1,54 +1,94 @@
-// OLD GRID STYLE PROJECT COMPONENT
+import { motion } from "framer-motion";
+import { transition, variants } from "../utils/motionAnimation";
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+import { icons } from "../utils/iconLoader.js";
 
-// import { motion } from "framer-motion";
-// import { transition, variants } from "../utils/motionAnimation";
+const Project = ({ project }) => {
+  return (
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      transition={{ staggerChildren: 0.04 }}
+      className="mb-8 xl:mb-10 mt-2"
+    >
+      <div className="flex-none xl:flex gap-6 px-4">
+        <motion.div
+          transition={transition}
+          variants={variants}
+          className="xl:w-[51%] xl:flex-shrink-0"
+        >
+          <img
+            src={project.image}
+            alt=""
+            className="h-auto rounded-xl w-full xl:h-[220px] object-cover"
+          />
+        </motion.div>
+        <div className="py-3 px-1 xl:px-0 xl:pb-1 xl:pt-2 xl:wi-[49%]">
+          <motion.div transition={transition} variants={variants}>
+            <h1 className=" pb-3 text-neutral-800 font-semibold dark:text-neutral-200">
+              {project.title}
+            </h1>
+          </motion.div>
+          <motion.div
+            transition={transition}
+            variants={variants}
+            className="pb-3 flex gap-2"
+          >
+            {project.tech_stack.map((tech) =>
+              icons[tech] ? (
+                <img
+                  key={tech}
+                  src={icons[tech]}
+                  alt={tech}
+                  className="h-5 w-5"
+                />
+              ) : (
+                <div
+                  key={tech}
+                  className="h-5 w-5 bg-gray-200 rounded"
+                  title={tech}
+                />
+              )
+            )}
+          </motion.div>
+          <motion.p
+            transition={transition}
+            variants={variants}
+            className="text-neutral-600 dark:text-neutral-400 text-[15px] leading-relaxed xl:line-clamp-4"
+          >
+            {project.description}
+          </motion.p>
+          {/* BUTTONS */}
+          <motion.div
+            transition={transition}
+            variants={variants}
+            className="flex items-center space-x-4 mt-2"
+          >
+            <a
+              href={project.github_link}
+              className="flex items-center space-x-2 py-1.5 text-sm text-gray-600 dark:text-neutral-400 dark:hover:text-neutral-300 hover:text-gray-900 transition-colors duration-200"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="w-4 h-4" />
+              <span className="font-medium">Code</span>
+            </a>
 
-// const Project = ({ title, description, image, github_link, live_link }) => {
-//   return (
-//     <motion.div
-//       initial="hidden"
-//       whileInView="visible"
-//       transition={{ staggerChildren: 0.04 }}
-//       className="flex flex-col gap-4 pb-6  md:gap-1 md:flex-col hover:shadow-md rounded-md"
-//     >
-//       <motion.div
-//         transition={transition}
-//         variants={variants}
-//         className=" md:w-fit"
-//       >
-//         <img src={image} alt="" className="h-40 w-72 rounded-xl" />
-//       </motion.div>
-//       <motion.div
-//         transition={transition}
-//         variants={variants}
-//         className="p-1 md:pt-6  flex flex-col justify-center md:w-fit md:hover:pl-3 transition-all duration-300"
-//       >
-//         <h1 className="font-medium tracking-tight text-neutral-700 dark:text-neutral-300 pb-1 ">
-//           {title}
-//         </h1>
-//         <p className="text-[15px] dark:text-neutral-400 dark:text-opacity-80 text-neutral-500  pb-2">
-//           {description}
-//         </p>
+            <a
+              href={project.live_link}
+              className="flex items-center space-x-2 py-1.5 text-sm text-gray-600 dark:text-neutral-400 dark:hover:text-neutral-300 hover:text-gray-900 transition-colors duration-200"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiExternalLink className="w-4 h-4" />
+              <span className="font-medium">Live</span>
+            </a>
+          </motion.div>
+        </div>
+      </div>
+    </motion.div>
+  );
+};
 
-//         <div>
-//           <a
-//             href={github_link}
-//             target="_blank"
-//             className="cursor-pointer text-neutral-500 dark:text-neutral-400 dark:text-opacity-80 text-[13px] pr-3 hover:text-blue-500 dark:hover:text-blue-500"
-//           >
-//             Github
-//           </a>
-//           <a
-//             href={live_link}
-//             target="_blank"
-//             className="cursor-pointer dark:text-neutral-400 dark:text-opacity-80 text-neutral-500 text-[13px] hover:text-blue-500 dark:hover:text-blue-500"
-//           >
-//             Live
-//           </a>
-//         </div>
-//       </motion.div>
-//     </motion.div>
-//   );
-// };
-
-// export default Project;
+export default Project;
