@@ -21,7 +21,7 @@ const Project = ({ project }) => {
           <img
             src={project.image}
             alt=""
-            className="h-auto rounded-xl w-full xl:h-[220px] object-cover"
+            className="h-auto rounded-xl w-full xl:h-[220px] object-cover shadow-sm border-[1px] border-opacity-50 border-neutral-500"
           />
         </motion.div>
         <div className="py-3 px-1 xl:px-0 xl:pb-1 xl:pt-2 xl:wi-[49%]">
@@ -41,7 +41,7 @@ const Project = ({ project }) => {
                   key={tech}
                   src={icons[tech]}
                   alt={tech}
-                  className="h-5 w-5"
+                  className="h-5 w-5 hover:animate-ping"
                 />
               ) : (
                 <div
