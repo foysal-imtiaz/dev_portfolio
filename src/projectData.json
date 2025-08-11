@@ -17,20 +17,20 @@
 
   },
   {
-    "title": "Landing Page",
-    "description": "A web application for translating song lyrics using AI. This project involved learning new technologies like Nuxt, Stripe, and OpenAI integrationt involved learning new technologies like Nuxt",
-    "image": "https://img.freepik.com/premium-psd/camera-landing-page_23-2148870973.jpg",
-    "github_link": "https://github.com/foysal-imtiaz/influencer-gear",
-    "live_link": "https://foysal-imtiaz.github.io/influencer-gear/",
-    "tech_stack": ["HTML5", "Node.js", "React", "Tailwind CSS"]
-
-  },
-  {
     "title": "Weather App",
     "description": "A web application for ranslating song lyrics using AI. This project involved learning translating song lyrics using AI. This project involved learning new technologies like Nuxt, Stripe, and OpenAI integration.",
     "image": "https://elements-resized.envatousercontent.com/elements-cover-images/bedca7ea-76f7-424f-bb28-05894ef238fb?w=433&cf_fit=scale-down&q=85&format=auto&s=775e14158197d5246f0418499eb668f42bbbb9ec5258666792817a9b711f8ebb",
     "github_link": "https://github.com/yourusername/ai-portfolio",
     "live_link": "https://github.com/yourusername/ai-portfolio",
+    "tech_stack": ["HTML5", "Node.js", "React", "Tailwind CSS"]
+
+  },
+  {
+    "title": "Landing Page",
+    "description": "A web application for translating song lyrics using AI. This project involved learning new technologies like Nuxt, Stripe, and OpenAI integrationt involved learning new technologies like Nuxt",
+    "image": "https://img.freepik.com/premium-psd/camera-landing-page_23-2148870973.jpg",
+    "github_link": "https://github.com/foysal-imtiaz/influencer-gear",
+    "live_link": "https://foysal-imtiaz.github.io/influencer-gear/",
     "tech_stack": ["HTML5", "Node.js", "React", "Tailwind CSS"]
 
   }

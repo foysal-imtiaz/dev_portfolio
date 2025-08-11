@@ -63,7 +63,7 @@ const HomePage = () => {
           <a
             href="https://www.linkedin.com/in/foysalimtiaz"
             target="_blank"
-            className="font-semibold hover:text-blue-500"
+            className="font-semibold hover:text-blue-600"
           >
             message
           </a>
@@ -90,7 +90,7 @@ const HomePage = () => {
           ))}
         </div>
         <div className="flex justify-center">
-          <button className=" w-fit text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-400">
+          <button className=" w-fit text-sm text-neutral-500 hover:text-blue-700 dark:hover:text-blue-700">
             <Link to="/projects" onClick={handleLinkClick}>
               See More <RiArrowDownSLine className="inline" />
             </Link>
@@ -114,7 +114,7 @@ const HomePage = () => {
         ))}
       </div>
       <div className="flex justify-center">
-        <button className="mt-4 w-fit text-sm text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-400">
+        <button className="mt-4 w-fit text-sm text-neutral-500 hover:text-blue-700 dark:hover:text-blue-700">
           <Link to="/notes" onClick={handleLinkClick}>
             See More <RiArrowDownSLine className="inline" />
           </Link>
@@ -162,10 +162,10 @@ const HomePage = () => {
         </p>
         <div className="flex gap-2 pr-2">
           <a href="https://github.com/foysal-imtiaz/" target="_blank">
-            <FaGithub className=" cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-300" />
+            <FaGithub className=" cursor-pointer h-5 w-5 text-neutral-700 hover:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-600" />
           </a>
           <a href="https://www.linkedin.com/in/foysalimtiaz" target="_blank">
-            <FaLinkedinIn className=" cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-300" />
+            <FaLinkedinIn className=" cursor-pointer h-5 w-5 text-neutral-700 hover:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-600" />
           </a>
         </div>
       </div>

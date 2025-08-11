@@ -91,10 +91,10 @@ const BlogPostPage = () => {
         </p>
         <div className="flex gap-2 pr-2">
           <a href="https://github.com/foysal-imtiaz/" target="_blank">
-            <FaGithub className=" cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-300" />
+            <FaGithub className=" cursor-pointer h-5 w-5 text-neutral-700 hover:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-600" />
           </a>
           <a href="https://www.linkedin.com/in/foysalimtiaz" target="_blank">
-            <FaLinkedinIn className=" cursor-pointer h-5 w-5 text-neutral-700 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-300" />
+            <FaLinkedinIn className=" cursor-pointer h-5 w-5 text-neutral-700 hover:text-blue-600 dark:text-neutral-500 dark:hover:text-blue-600" />
           </a>
         </div>
       </div>

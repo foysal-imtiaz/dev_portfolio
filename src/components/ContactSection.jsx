@@ -23,7 +23,8 @@ const ContactSection = () => {
         </p>{" "}
         <a
           href="https://www.linkedin.com/in/foysalimtiaz"
-          className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-300 underline underline-offset-2"
+          className="text-neutral-600 dark:text-neutral-400 hover:text-blue-700
+          dark:hover:text-blue-700 underline underline-offset-2"
         >
           linkedin.com/in/foysalimtiaz
         </a>
@@ -34,7 +35,7 @@ const ContactSection = () => {
         </p>{" "}
         <a
           href="https://github.com/foysal-imtiaz/"
-          className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-300 underline underline-offset-2 "
+          className="text-neutral-600 dark:text-neutral-400 hover:text-blue-700 dark:hover:text-blue-700 underline underline-offset-2 "
         >
           github.com/foysal-imtiaz
         </a>
@@ -45,7 +46,7 @@ const ContactSection = () => {
         </p>{" "}
         <a
           href="mailto:foysalimtiaz96@gmail.com"
-          className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-300 underline underline-offset-2 "
+          className="text-neutral-600 dark:text-neutral-400 hover:text-blue-700 dark:hover:text-blue-500 underline underline-offset-2 "
         >
           foysalimtiaz96@gmail.com
         </a>

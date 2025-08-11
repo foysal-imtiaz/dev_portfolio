@@ -21,7 +21,7 @@ const Project = ({ project }) => {
           <img
             src={project.image}
             alt=""
-            className="h-auto rounded-xl w-full xl:h-[220px] object-cover shadow-sm border-[1px] border-opacity-50 border-neutral-500"
+            className="h-auto rounded-xl w-full xl:h-[220px] object-cover shadow-sm border-[1px] border-opacity-30 border-neutral-500"
           />
         </motion.div>
         <div className="py-3 px-1 xl:px-0 xl:pb-1 xl:pt-2 xl:wi-[49%]">
@@ -67,7 +67,7 @@ const Project = ({ project }) => {
           >
             <a
               href={project.github_link}
-              className="flex items-center space-x-2 py-1.5 text-sm text-gray-600 dark:text-neutral-400 dark:hover:text-neutral-300 hover:text-gray-900 transition-colors duration-200"
+              className="flex items-center space-x-2 py-1.5 text-sm text-gray-600 dark:text-neutral-400 dark:hover:text-blue-700 hover:text-blue-700 transition-colors duration-200"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -77,7 +77,7 @@ const Project = ({ project }) => {
 
             <a
               href={project.live_link}
-              className="flex items-center space-x-2 py-1.5 text-sm text-gray-600 dark:text-neutral-400 dark:hover:text-neutral-300 hover:text-gray-900 transition-colors duration-200"
+              className="flex items-center space-x-2 py-1.5 text-sm text-gray-600 dark:text-neutral-400 dark:hover:text-blue-700 hover:text-blue-700 transition-colors duration-200"
               target="_blank"
               rel="noopener noreferrer"
             >
