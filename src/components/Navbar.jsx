@@ -20,25 +20,10 @@ const Navbar = () => {
   const [hovered, setHovered] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const dropDownRef = useRef(null);
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
-
-  useEffect(() => {
-    if (!menuOpen) return;
-    const handleClickOutside = (e) => {
-      if (dropDownRef.current && !dropDownRef.current.contains(e.target)) {
-        setMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [menuOpen]);
 
   // New page on top
   const handleLinkClick = () => {
@@ -132,7 +117,6 @@ const Navbar = () => {
           <div
             className="md:hidden flex justify-center items-center gap-2"
             onClick={toggleMenu}
-            ref={dropDownRef}
           >
             <LuMenu className="dark:text-neutral-300 h-6 w-6" />
           </div>

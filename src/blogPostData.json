@@ -1,24 +1,14 @@
 [
   {
-    "title": "The Future of AI: What's Next?",
-    "image": "https://assets.chanhdai.com/images/blog/react-wheel-picker-joins-vercel-open-source-program.webp",
-    "readMoreLink": "https://example.com/blog/ai-future",
-    "date": "2025-07-28"
+    "title": "AI Lingo, Decoded: 20 Buzzwords You Need to Know",
+    "image": "/assets/blogImage/post_1.png",
+    "readMoreLink": "https://dev.to/foysal_imtiaz/ai-lingo-decoded-20-buzzwords-you-need-to-know-n9p",
+    "date": "2025-09-16"
   },  {
-    "title": "Mastering Remote Work: Tips for Productivity",
-    "image": "https://assets.chanhdai.com/images/blog/grateful-for-the-feedback-on-my-portfolio-website.webp",
-    "readMoreLink": "https://example.com/blog/remote-work-tips",
-    "date": "2025-07-25"
-  },  {
-    "title": "Mastering Remote Work: Tips for Productivity",
-    "image": "https://assets.chanhdai.com/images/blog/grateful-for-the-feedback-on-my-portfolio-website.webp",
-    "readMoreLink": "https://example.com/blog/remote-work-tips",
-    "date": "2025-07-25"
-  },  {
-    "title": "Mastering Remote Work: Tips for Productivity",
-    "image": "https://assets.chanhdai.com/images/blog/grateful-for-the-feedback-on-my-portfolio-website.webp",
-    "readMoreLink": "https://example.com/blog/remote-work-tips",
-    "date": "2025-07-25"
+    "title": "If You Are A Student, You Should Be Taking Full Advantage of GitHub Student Benefits",
+    "image": "/assets/blogImage/post_2.jpg",
+    "readMoreLink": "#",
+    "date": "coming soon"
   }
 
 ]

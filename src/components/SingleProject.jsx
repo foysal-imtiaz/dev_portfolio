@@ -27,7 +27,7 @@ const SingleProject = () => {
     >
       <div className="px-4 pt-2 mb-24">
         {/* Title + Links */}
-        <div className="flex justify-between items-center pb-5">
+        <div className="md:flex md:justify-between md:pb-5 pb-2">
           <motion.h1
             transition={transition}
             variants={variants}
@@ -39,7 +39,7 @@ const SingleProject = () => {
           <motion.div
             transition={transition}
             variants={variants}
-            className="flex items-center space-x-4 pr-3"
+            className="flex items-center space-x-4 pr-3 pl-1"
           >
             {/* Github Link */}
             <a
@@ -100,7 +100,7 @@ const SingleProject = () => {
         <motion.div
           transition={transition}
           variants={variants}
-          className="mt-3 text-neutral-600 dark:text-neutral-400 text-[16px] leading-relaxed pl-1"
+          className="mt-3 text-neutral-600 dark:text-neutral-400 text-[16px] leading-relaxed pl-5"
         >
           {project.features.map((feature) => (
             <li key={feature}>{feature}</li>

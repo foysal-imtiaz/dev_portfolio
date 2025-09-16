@@ -20,7 +20,7 @@ const BlogPost = ({ title, image, readMoreLink, date }) => {
               <img
                 src={image}
                 alt=""
-                className="rounded-xl w-full min-h-[180px]"
+                className="rounded-xl w-full min-h-[180px] dark:border-gray-700 dark:border-opacity-60 dark:shadow-lg dark:border-[1px]"
               />
             </div>
             <div>

@@ -54,12 +54,13 @@ const HomePage = () => {
         <motion.p
           transition={transition}
           variants={variants}
-          className="text-neutral-600 dark:text-neutral-400 text-[16px]  mt-4 md:w-[65%]"
+          className="text-neutral-600 dark:text-neutral-400 text-[16px]  mt-4 md:w-[68%]"
         >
-          Hi, I am a Full Stack developer proficient in MERN stack, NextJS and
-          Wordpress. From design to deployment I handle all the clients
-          requirements. I am looking for new opportunities. If you are looking
-          for a developer to hire or have any queries, just leave a{" "}
+          Currently focused on learning and building across the FullStack (MERN)
+          and AI spectrum. Completed my graduation in Computer Science and
+          Engineering. I like contributing to open-source projects. I want to
+          build full-scale solutions that can create an impact. If you are
+          looking for a developer to hire or have any queries, just leave a{" "}
           <a
             href="https://www.linkedin.com/in/foysalimtiaz"
             target="_blank"
