@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", "Inter Fallback";
+  background-color: #f1f1f1;
+}
+
+html.dark body {
+  background-color: #0a0a0a;
+}
+
+
+.bg-angled-lines {
+  background-image: repeating-linear-gradient(
+    -45deg,                   /* very steep angle */
+    rgba(0, 0, 0, 0.06),      /* line color with slight opacity */
+    rgba(0, 0, 0, 0.06) 1px,  /* 1px thick line */
+    transparent 1px,
+    transparent 8px           /* small gap = denser lines */
+  );
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+html.dark .bg-angled-lines {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #222222,               /* dark mode line color */
+    #222222 1px,
+    transparent 1px,
+    transparent 8px
+  );
+}
+
+
